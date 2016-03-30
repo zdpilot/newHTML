@@ -11,104 +11,200 @@
         body {
             margin:0;
         }
-
-        p {
+        .tab {
             margin:0;
+            text-indent: 50px;
+        }
+        a:link {
+            text-decoration: none;
+
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        hr {
+            background-color: #69253A;
+            margin-top:90px;
+            margin-bottom:10px;
+            margin-left:auto;
+            margin-right:auto;
+            width:80%;
+            border: 0;
+            border-radius: 5px;
+            height: 8px;
+            box-shadow: 5px 5px 10px 0px #888888;
         }
 
         #headerimg {
-            background-image:url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
-            background-size:100% 100%;
-            background-repeat:no-repeat;
-            background-position:top left;
-            height:400px;
-            border:none;
-
-
+            background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: top left;
+            height: 300px;
+            border: none;
         }
-
-        #header {
+        #headertitle {
             -webkit-background-size:;
-            font-family:"Copperplate", serif;
-            font-size:150%;
-            text-align:center;
-            text-size:200%;
-            position:relative;
-            left:800px;
-            top:210px;
+            font-family: "Copperplate Gothic", Sans;
+            font-size: 150%;
+            font-weight:lighter;
+            text-align: center;
+            text-size: 200%;
+            text-shadow: 2px 2px #888888;
+            position: absolute;
+            left: 800px;
+            top: 110px;
+            float: left;
+            color: white;
+        }
+        #leftbutton {
+            padding: 5px 25px 5px 65px;
+            border-right: 1px solid #6B8AA1;
+            float: left;
+            color: white;
+            margin: 5px;
+        }
+        .middlebuttons {
+
+            padding: 5px 25px 5px 10px;
+            border-right: 1px solid #6B8AA1;
+            float: left;
+            color: white;
+            margin: 5px;
+        }
+        .rightbutton {
+            padding: 5px 25px 5px 10px;
+            float: left;
+            color: white;
+            margin: 5px;
+        }
+        #biobackground {
+            background-image:url("http://k41.kn3.net/225392EE5.png");
+            height: 300px;
+            width: 1000px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            border-radius: 15px;
+            position: relative;
+            margin: 0 auto;
+            top: 40px;
+            box-shadow: 25px 15px 15px 2px #888888;
+        }
+        #bioimage {
+            height:200px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top:20px;
+            left:40px;
+            box-shadow: 20px 10px 10px 1px #888888;
+        }
+        #bio {
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top:20px;
+            left:500px;
+        }
+        .button {
+            box-shadow: 5px 2px 10px 1px #888888;
+            color: black;
+        }
+        #projects {
+            background-color: white;
+            height: 550px;
+            width: 1500px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            border-radius: 15px;
+            position: relative;
+            margin: 0 auto;
+            top: 40px;
+
+        }
+        .projectdiv1 {
+            background-color:blue;
+            height: 400px;
+            width: 300px;
             float:left;
-            color:white;
+        }
+        .projectdiv2 {
+            background-color:red;
+            height: 400px;
+            width: 300px;
+            float:left;
+        }
+        .projectdiv3 {
+            background-color:blue;
+            height: 400px;
+            width: 300px;
+            float:left;
         }
 
-        .textbody {
-            text-decoration-color:white;
-        }
-
-        .menu {
-            background-size:100% 100%;
-            background-color:#141E28;
-            text-align:center;
-            color:white;
-        }
-
-        .borderright {
-            padding-top:5px;
-            border-right:1px solid #6B8AA1;
-        }
-
-        .borderleft {
-            padding-top:5px;
-            border-left:1px solid #6B8AA1;
-        }
 
     </style>
 
 </head>
 
-<body style="background-color:white" class="textbody">
+<body style="background-color:white">
 
     <div id="headerimg">
 
-    <div id="header">
-        <h1>Patrick Kesler</h1>
-        <h3>A Web Development Student</h3>
-    </div>
-    </div>
+        <div>
+            <p id="leftbutton"><a href="index.html" style="color:white">Home</a></p>
+            <p class="middlebuttons"><a href="AboutMe.html" style="color:white">About Me</a></p>
+            <p class="middlebuttons"><a href="Projects.html" style="color:white">Projects</a></p>
+            <p class="rightbutton"><a href="Contact.html" style="color:white">Contact</a></p>
+        </div>
 
-    <div class="menu">
-        <div class="borderright"><p>Home</p></div>
-        <div class="borderright"><p>About Me</p></div>
-        <div class="borderright"><p>Projects</p></div>
-        <div class="borderleft"><p>Contact</p></div>
+        <div id="headertitle">
+            <h1>Patrick Kesler</h1>
+            <h3>Your Professional Developer</h3>
+        </div>
 
-        <button type="button">Home</button>
-        <button type="button">About Me</button>
-        <button type="button">Projects</button>
-        <button type="button">Contact</button>
     </div>
 
-    <hr/>
+    <div id="biobackground">
+        <img id="bioimage" src="http://www.professionalcomputerservices.ca/wp-content/uploads/2013/01/Managed-Services.jpg">
+            <div id="bio">
+                <h2>Developer Bio</h2>
+                    <p class="tab">I have 7+ years experience in business to business marketing concepts
+                        and general development. During my time as a development director, I worked on
+                        various marketing projects that expanded our reach by more that 600%. I am very
+                        detail oriented. It’s very important to me to dig into a project and find
+                        the best way to get things done efficiently.
+                    </p>
+                <br/>
 
-    <div>
-        <img src="http://thumbs.dreamstime.com/t/professional-businessman-superhero-costume-leadership-concept-64705700.jpg">
-            <div>
-                <h2>Patrick Kesler</h2>
-                <ul>
-                    <li>I have been developing for nearly 2 years</li>
-                    <li>I have designed websites for multiple businesses over a 10 year period of time.</li>
-                    <li>I plan to use my skills to increase efficiency and production... etc.</li>
-                </ul>
-                <button type="button">Read More</button>
+                <button class="button" type="button"><a href="AboutMe.html">Read More<a/></button>
             </div>
     </div>
 
-    <br/>
+    <!-- This is where the bio section ends and the projects section begins -->
+
     <hr/>
+
+    <br/>
     <br/>
 
     <div>
-        <div>
-            <h2>Projects</h2>
+        <div id="projects">
+
+            <div class="projectdiv1">
+
+            </div>
+
+            <div class="projectdiv2">
+
+            </div>
+
+            <div class="projectdiv3">
+
+            </div>
+
         </div>
         <div>
             <ol>
@@ -139,8 +235,6 @@
 
         <div>
             <a href="https://www.linkedin.com/in/pkesler">Linkedin</a>
-            <br/>
-            <button href="https://www.facebook.com/camaropatch/">Facebook</button>
         </div>
     </div>
 
