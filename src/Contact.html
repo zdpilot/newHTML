@@ -15,29 +15,21 @@
         p {
             margin:0;
         }
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
+        h2 {
+            padding-left: 55px;
+        }
 
         #headerimg {
             background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
             background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: top left;
-            height: 100px;
+            height: 50px;
             border: none;
-
-
-        }
-
-        #headertitle {
-            -webkit-background-size:;
-            font-family: "Copperplate", serif;
-            font-size: 150%;
-            text-align: center;
-            text-size: 200%;
-            position: relative;
-            left: 400px;
-            top: 210px;
-            float: left;
-            color: white;
         }
 
         .textbody {
@@ -83,34 +75,20 @@
             color: white;
             margin: 5px;
         }
-
-        #biobackground {
-            background-image:url("http://k41.kn3.net/225392EE5.png");
-            height: 300px;
-            width: 1000px;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            border-radius: 15px;
+        form {
+            margin: 55px;
+        }
+        .imgposition {
             position: relative;
-            margin: 0 auto;
-            top: 40px;
-            box-shadow: 10px 10px 5 px #888888;
+            top: -600px;
+            left: 500px;
+        }
+        .myinfo {
+            position: relative;
+            top: -600px;
+            left: 500px;
         }
 
-        #bioimage {
-            height:200px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            position: absolute;
-
-
-        }
-
-        #bio {
-
-        }
 
     </style>
 
@@ -127,70 +105,70 @@
         <p class="rightbutton">Contact</p>
     </div>
 
-    <div id="headertitle">
-        <h1>Patrick Kesler</h1>
-        <h3>A Web Development Student</h3>
-    </div>
-
 </div>
 
 <!-- This is where the header section ends and the bio section begins -->
 
-<!-- TODO: round out and center the background and change the font -->
+<div>
 
-<div id="biobackground">
-    <img id="bioimage" src="http://www.professionalcomputerservices.ca/wp-content/uploads/2013/01/Managed-Services.jpg">
-    <div>
-        <h2>Patrick Kesler</h2>
-        <ul>
-            <li>I have been developing for nearly 2 years</li>
-            <li>I have designed websites for multiple businesses over a 10 year period of time.</li>
-            <li>I plan to use my skills to increase efficiency and production... etc.</li>
-        </ul>
-        <button type="button">Read More</button>
-    </div>
+        <h1>Contact Me</h1>
 </div>
 
-<!-- This is where the bio section ends and the projects section begins -->
+<hr>
 
 <div>
-    <div>
-        <h2>Projects</h2>
+
+    <h2>I look forward to hearing from you!</h2>
+
+    <form method="get">
+
+        <div>
+            <p>Gender</p>
+            <input type="radio" name="gender" value="Male">Male</input><br/>
+            <input type="radio" name="gender" value="Female">Female</input><br/>
+            <input type="radio" name="gender" value="Batman">Batman</input><br/>
+        </div>
+        <br/>
+        <p>Favorite Food</p>
+        <div>
+            <input type="radio" name="food" value="italian">Italian</input><br/>
+            <input type="radio" name="food" value="other">Other</input><br/>
+        </div>
+        <br/>
+        <div>
+            <input type="text" name="first" placeholder="First Name" size="20"></input><br/><br>
+        </div>
+        <div>
+            <input type="text" name="last" placeholder="Last Name" size="22"></input><br/><br>
+        </div>
+        <div>
+            <input type="tel" name="phone" placeholder="(000) 000-0000" size="26"></input><br/><br>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="Email" size="28"></input><br/><br>
+        </div>
+        <div>
+            <input type="text" name="address" placeholder="Address" size="40"></input><br/><br>
+        </div>
+        <div>
+            <textarea cols="40" rows="10" type="text" placeholder="Place your reason here"></textarea><br/><br/>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+
+    </form>
+
+    <img class="imgposition" src="http://il8.picdn.net/shutterstock/videos/3815474/thumb/1.jpg"/>
+
+    <div class="myinfo">
+        <p>Patrick Kesler</p>
+        <p>5077 W 11000 N Highland, UT 84003</p>
+        <p>(801) 633-6373</p>
+        <p>rimington4987@gmail.com</p>
     </div>
-    <div>
-        <ol>
-            <li>Projects 1 and 2 include years 2009-2012
-                <ul>
-                    <li>Project 1 is business related</li>
-                    <li>Project 2 is personal</li>
-                </ul>
-            </li>
-            <li>Projects 3 through 5 include years 2012-2016</li>
-        </ol>
 
-        <h4>Choose a project</h4>
-
-        <select>
-            <option value="" disabled selected>Projects</option>
-            <option>Project 1</option>
-            <option>Project 2</option>
-            <option>Project 3</option>
-            <option>Project 4</option>
-            <option>Project 5</option>
-        </select>
-    </div>
-
-    <br/>
-    <hr/>
-    <br/>
-
-    <div>
-        <a href="https://www.linkedin.com/in/pkesler">Linkedin</a>
-    </div>
 </div>
-
-
-
 
 </body>
 
