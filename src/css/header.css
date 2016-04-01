@@ -1,0 +1,64 @@
+body {
+    margin:0;
+}
+p {
+    margin:0;
+}
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+h2 {
+    padding-left: 55px;
+}
+h6 {
+    position: center;
+    margin: 0 auto;
+}
+#headerimg {
+    background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 50px;
+    border: none;
+}
+.textbody {
+    text-decoration-color: white;
+}
+.center {
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+    color:white;
+}
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+#leftbutton {
+    padding: 5px 25px 5px 65px;
+    border-right: 1px solid #6B8AA1;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+
+.middlebuttons {
+
+    padding: 5px 25px 5px 10px;
+    border-right: 1px solid #6B8AA1;
+    float: left;
+    color: white;
+    margin: 5px;
+
+}
+
+.rightbutton {
+    padding: 5px 25px 5px 10px;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+
