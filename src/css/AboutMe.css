@@ -4,7 +4,7 @@
 }
 .picturebio {
     margin-left: 50px;
-    height: 400px;
+    height: 300px;
     width: 500px;
 }
 .pictureofme {
@@ -12,5 +12,8 @@
     position: absolute;
     left: 650px;
     top: 200px;
+}
+.underphoto {
+    margin: 25px; 50px; 25px; 50px;
 }
 
