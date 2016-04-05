@@ -7,10 +7,11 @@ body {
 }
 a:link {
     text-decoration: none;
-
+    color: white;
 }
 a:visited {
     text-decoration: none;
+    color: white;
 }
 hr {
     background-color: #69253A;
@@ -46,6 +47,13 @@ h6 {
     left: 450px;
     top: 110px;
     color: white;
+}
+#mypic {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    height: 250px;
+    opacity: .6;
 }
 #leftbutton {
     padding: 5px 25px 5px 65px;
@@ -90,6 +98,7 @@ h6 {
     top:20px;
     left:40px;
     box-shadow: 20px 10px 10px 1px #888888;
+    opacity: 0.6;
 }
 #bio {
     height: 300px;
@@ -98,7 +107,7 @@ h6 {
     top:20px;
     left:500px;
 }
-.button {
+a.button {
     color: black;
 }
 #projects {
@@ -125,6 +134,7 @@ h6 {
     float:left;
     margin-left: 190px;
     margin-right: 30px;
+    color: black;
 }
 .projectdiv2 {
     background-position: center;
@@ -134,6 +144,7 @@ h6 {
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 15px;
+    color: black;
 }
 .projectdiv3 {
     background-position: right;
@@ -141,6 +152,7 @@ h6 {
     width: 300px;
     float:left;
     margin-left: 35px;
+    color: black;
 }
 .content1 {
     position: absolute;
@@ -149,6 +161,7 @@ h6 {
     float: left;
     height: 100px;
     width: 300px;
+    color: black;
 }
 .content2 {
     position: absolute;
@@ -157,6 +170,7 @@ h6 {
     float:left;
     height: 100px;
     width: 350px;
+    color: black;
 }
 .content3 {
     position: absolute;
@@ -165,6 +179,13 @@ h6 {
     float: left;
     height: 100px;
     width: 300px;
+    color: black;
+}
+.quote1 {
+    margin: 30px auto 0px auto;
+}
+.quote2 {
+    margin: 25px 300px 0px auto;
 }
 #footerimage {
     background-image:url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
@@ -173,4 +194,82 @@ h6 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top left;
+}
+.footermenu1 {
+    color: white;
+    margin: 35px auto 15px 200px;
+    position: absolute;
+    left: 0px
+    top: 50px
+    width: 50px;
+}
+.footericon1 {
+    margin: 30px auto 15px 100px;
+    height: 30px;
+    float: left;
+    position: relative;
+}
+.footericon2 {
+    margin: 30px auto 15px -31px;
+    height: 32px;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+.footericon3 {
+    margin: 30px auto 15px -31px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 100px;
+}
+.footericon4 {
+    margin: 30px auto 15px -31px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 150px;
+}
+.footermenutitle1 {
+    color: white;
+    margin:  0px 0px 15px 300px;
+    border-bottom: solid 2px;
+    position: relative;
+    top: 35px;
+    width: 50px;
+}
+.footermenu1 {
+    color: white;
+    margin: 35px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu2 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu3 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu4 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu5 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
 }

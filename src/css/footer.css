@@ -6,3 +6,73 @@
     background-repeat: no-repeat;
     background-position: top left;
 }
+.footericon1 {
+    margin: 30px auto 15px 100px;
+    height: 30px;
+    float: left;
+    position: relative;
+}
+.footericon2 {
+    margin: 30px auto 15px -31px;
+    height: 32px;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+.footericon3 {
+    margin: 30px auto 15px -31px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 100px;
+}
+.footericon4 {
+    margin: 30px auto 15px -31px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 150px;
+}
+.footermenutitle1 {
+    color: white;
+    margin:  0px 0px 15px 300px;
+    border-bottom: solid 2px;
+    position: relative;
+    top: 35px;
+    width: 50px;
+}
+.footermenu1 {
+    color: white;
+    margin: 35px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu2 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu3 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu4 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu5 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
