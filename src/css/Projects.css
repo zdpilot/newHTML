@@ -61,23 +61,10 @@ a:visited {
 
 
 
-.tab {
-    margin:0;
-    text-indent: 50px;
-}
-.picturebio {
-    margin-left: 50px;
-    height: 300px;
-    width: 500px;
-}
-.pictureofme {
-    float: left;
-    position: absolute;
-    left: 650px;
-    top: 200px;
-}
-.underphoto {
-    margin: 25px; 50px; 25px; 50px;
+.gameposition {
+    margin: 0px auto 20px auto;
+    position: relative;
+    left: 420px;
 }
 
 
