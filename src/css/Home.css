@@ -29,6 +29,10 @@ h6 {
     position: center;
     margin: 0 auto;
 }
+@keyframes titlemove {
+    from {left: 1200px;}
+    to {left: 450px;}
+}
 #headerimg {
     background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
     background-size: 100% 100%;
@@ -38,11 +42,11 @@ h6 {
     border: none;
 }
 #headertitle {
+    animation: titlemove 5s;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 150%;
     font-weight:lighter;
     text-align: center;
-    text-size: 200%;
     text-shadow: 2px 2px #888888;
     position: relative;
     float: left;
@@ -80,34 +84,30 @@ h6 {
 }
 #biobackground {
     background-image:url("http://k41.kn3.net/225392EE5.png");
-    height: 300px;
-    width: 1000px;
+    height: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    border-radius: 15px;
     position: relative;
     margin: 0 auto;
-    top: 40px;
-    box-shadow: 15px 10px 15px 2px #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #bioimage {
-    height:200px;
+    height:275px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    position: absolute;
-    top:20px;
-    left:40px;
     box-shadow: 20px 10px 10px 1px #888888;
     opacity: 0.6;
+    margin: 50px 25px 50px 0px;
 }
 #bio {
-    height: 300px;
     width: 400px;
-    position: absolute;
-    top:20px;
-    left:500px;
+    margin: 25px 25px 25px 0px;
 }
 a.button {
     color: black;
@@ -124,10 +124,18 @@ a.button {
     margin: 0 auto;
     top: 40px;
 }
+.projectimages:hover {
+    width: 110%;
+    height: 110%;
+    top: -20px;
+    left: -20px;
+}
 .projectimages {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    transform: scale(1);
+    position: relative;
 }
 .projectdiv1 {
     background-position: left;
@@ -164,6 +172,7 @@ a.button {
     height: 100px;
     width: 300px;
     color: black;
+    transform: scale(1);
 }
 .content2 {
     position: absolute;
@@ -173,6 +182,7 @@ a.button {
     height: 100px;
     width: 350px;
     color: black;
+    transform: scale(1);
 }
 .content3 {
     position: absolute;
@@ -182,6 +192,7 @@ a.button {
     height: 100px;
     width: 300px;
     color: black;
+    transform: scale(1);
 }
 .quote1 {
     margin: 30px auto 0px auto;
@@ -201,8 +212,8 @@ a.button {
     color: white;
     margin: 35px auto 15px 200px;
     position: absolute;
-    left: 0px
-    top: 50px
+    left: 0px;
+    top: 50px;
     width: 50px;
 }
 .footericon1 {
