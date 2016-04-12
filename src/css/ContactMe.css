@@ -58,6 +58,11 @@ a:visited {
     margin: 5px;
 }
 
+body {
+    font-family: Times;
+    font-size: medium;
+}
+
 
 
 
@@ -155,5 +160,3 @@ form {
     left: 0px;
     top: 15px;
 }
-
-

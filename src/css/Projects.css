@@ -15,6 +15,7 @@ h6 {
     position: center;
     margin: 0 auto;
 }
+
 #headerimg {
     background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
     background-size: 100% 100%;
@@ -58,13 +59,13 @@ a:visited {
     margin: 5px;
 }
 
-
-
-
-.gameposition {
-    margin: 0px auto 20px auto;
-    position: relative;
+body {
+    font-family: Times;
+    font-size: medium;
 }
+
+
+
 
 
 
