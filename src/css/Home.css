@@ -37,8 +37,16 @@ body {
     font-family: Times;
     font-size: medium;
 }
+@media screen and (max-width: 600px) {
+    div#headertitle {
+        position: absolute;
+        left: 100px;
+        top: 190px;
+        opacity: .4;
+    }
+}
 #headerimg {
-    background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
+    background-image: url('../img/headerbackground.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top left;
@@ -87,7 +95,7 @@ body {
     margin: 5px;
 }
 #biobackground {
-    background-image:url("http://k41.kn3.net/225392EE5.png");
+    background-image:url("../img/biobackground.png");
     background-size: 100% 100%;
     height: auto;
     background-repeat: no-repeat;

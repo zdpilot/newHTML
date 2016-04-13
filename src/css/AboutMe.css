@@ -64,7 +64,6 @@ a:visited {
 
 
 
-
 .tab {
     margin:0;
     text-indent: 50px;
@@ -82,6 +81,9 @@ a:visited {
 }
 .underphoto {
     margin: 25px; 50px; 25px; 50px;
+}
+.icons {
+    height: 200px;
 }
 
 
