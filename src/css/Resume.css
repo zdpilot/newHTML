@@ -7,9 +7,7 @@ p {
 h1 {
     text-align: center;
     padding-top: 50px;
-    margin-bottom: -130px;
-    border-bottom-style: solid;
-    border-color: #888888;
+
 }
 h2 {
     padding-left: 55px;
@@ -72,11 +70,12 @@ a:visited {
 }
 
 
-.titleborder {
-    border-bottom-style: solid;
-    border-color: #888888;
-    font-family: Times;
-    font-size: medium;
+
+.businesscard {
+    border: 1px solid #888888;
+    border-radius: 5px;
+    display: block;
+    margin: 0px auto 0px auto;
 }
 .tab {
     margin:0;
@@ -102,10 +101,6 @@ a:visited {
 
 
 
-#profile {
-    border-top-style: solid;
-    border-color: #888888;
-}
 #footerimage {
     background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
     height: 250px;
