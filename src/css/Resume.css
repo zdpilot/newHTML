@@ -70,13 +70,17 @@ a:visited {
 }
 
 
-
+@import url('https://www.linkedin.com/in/pkesler');
+.modal iframe {
+    width: 500px;
+    height: 800px;
+}
 .businesscard {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 15px 10px 10px 1px #888888;
     display: block;
-    margin: 0px auto 0px auto;
+    margin: 75px auto 0px auto;
 }
 .tab {
     margin:0;
