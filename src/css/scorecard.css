@@ -1,0 +1,215 @@
+h1 {
+    background-color: darkcyan;
+}
+#scorecard {
+    height: 30%;
+    width: 600px;
+    position: relative;
+    margin: 150px auto;
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+}
+.divborder {
+    border: 1px solid black;
+    height: 26px;
+    padding: 0px;
+    text-align: center;
+
+}
+input {
+    width: 100%;
+    border: none;
+}
+
+body {
+    margin:0;
+}
+p {
+    margin:0;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    padding-left: 55px;
+}
+h6 {
+    position: center;
+    margin: 0 auto;
+}
+body {
+    font-family: Times;
+    font-size: medium;
+}
+#headerimg {
+    background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 50px;
+    border: none;
+}
+.textbody {
+    text-decoration-color: white;
+}
+.center {
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+    color:white;
+}
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+#leftbutton {
+    padding: 5px 25px 5px 65px;
+    border-right: 1px solid #6B8AA1;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+.middlebuttons {
+    padding: 5px 25px 5px 10px;
+    border-right: 1px solid #6B8AA1;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+.rightbutton {
+    padding: 5px 25px 5px 10px;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 550px) {
+    div.underphoto {
+        width: 500px;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 900px) {
+    div.underphoto {
+        width: 700px;
+    }
+}
+@media screen and (max-width: px) {
+    div.underphoto {
+        width: 500px;
+    }
+}
+
+.tab {
+    margin:0;
+    text-indent: 50px;
+}
+.picturebio {
+    margin-left: 50px;
+    height: 300px;
+    width: 500px;
+}
+.pictureofme {
+    float: left;
+    position: absolute;
+    left: 650px;
+    top: 200px;
+}
+.underphoto {
+    margin: 25px; 50px; 25px; 50px;
+}
+.icons {
+    height: 200px;
+}
+
+
+
+#footerimage {
+    background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
+    height: 250px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.footericon1 {
+    margin: 30px auto 15px 100px;
+    height: 30px;
+    float: left;
+    position: relative;
+}
+.footericon2 {
+    margin: 30px auto 15px -31px;
+    height: 32px;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+.footericon3 {
+    margin: 30px auto 15px -31px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 100px;
+}
+.footericon4 {
+    margin: 30px auto 15px -31px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 150px;
+}
+.footermenutitle1 {
+    color: white;
+    margin:  0px 0px 15px 300px;
+    border-bottom: solid 2px;
+    position: relative;
+    top: 35px;
+    width: 50px;
+}
+.footermenu1 {
+    color: white;
+    margin: 35px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu2 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu3 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu4 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+.footermenu5 {
+    color: white;
+    margin: 10px auto 10px 300px;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
