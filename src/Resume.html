@@ -16,7 +16,7 @@
 
 </head>
 
-<body style="background-color:white" class="textbody">
+<body style="background-color:white" class="textbody" onload="card()">
 
 <div id="headerimg">
 
@@ -53,23 +53,38 @@
 
     <div id="procar" class="main-carousel js-flickity"
          data-flickity-options='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell"><a href="scorecard.html"><img class="carousel-image" src="img/scorecard.png"/></a><div class="bottomshadow"></div></div>
         <div class="carousel-cell"><a href="index.html"><img class="carousel-image" src="img/portfolio.png"/></a><div class="bottomshadow"></div></div>
+        <div class="carousel-cell"><a href="scorecard.html"><img class="carousel-image" src="img/scorecard.png"/></a><div class="bottomshadow"></div></div>
         <div class="carousel-cell"><img class="carousel-image" src="http://techweeds.com/wp-content/uploads/2015/10/shots5.png"/><div class="bottomshadow"></div></div>
 
 </div>
 
 <div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="text-align: center;">
 
-        <div class="leftside" style="width: 400px;">
+        <div class="leftside" style="width: 600px;">
 
             <div class="row">
 
                 <div class="col-sm-12">
                     <div style="height: 150px;">
                         <h1>Skills and Competencies</h1>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="img/html-5-icon.png" class="icons"/>
+                                <p>Something short about my incredible use of HTML5</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="img/css3.ico" class="icons"/>
+                                <p>Look how much I love CSS!</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="img/bootstrap-docs-readme.png" class="icons"/>
+                                <p>Ok, really, i'm just putting things in here to take up space.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -77,19 +92,76 @@
 
             <div class="row">
 
-                <div class="col-sm-8">
-                    <h1>experience</h1>
+                <div class="col-sm-12">
+                    <h1>Experience</h1>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/analogo.png" class="thumbnails"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/clalogo.png" class="thumbnails"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/Airborne.png" class="thumbnails"/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
+        <div class="rightside" style="width: 600px;">
 
-        <div class="education">
-            <h1>education</h1>
-        </div>
-        <div class="contact">
-            <h1>contact</h1>
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div class="education">
+                        <h1>Education</h1>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+
+                    <div class="contact">
+                        <h1>Contact</h1>
+                        <div id="bcard">
+
+                            <div id="container">
+
+                                <div id="title" class="backgroundfade">
+                                    <p id="quote"></p>
+                                </div>
+
+                                <div id="centername" class="backgroundfade">
+                                    <p id="name"></p>
+                                </div>
+
+                                <div class="contactinfo">
+
+                                    <div class="backgroundfade">
+                                        <p id="address"></p>
+                                    </div>
+
+                                    <div class="backgroundfade">
+                                        <p id="phone"></p>
+                                    </div>
+
+                                    <div class="backgroundfade">
+                                        <p id="email"></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -141,9 +213,7 @@
 
 <script src="js/vendor/flickity.js"></script>
 
-<script>
-
-</script>
+<script src="js/resume.js"></script>
 
 </body>
 

@@ -14,7 +14,6 @@ h2 {
 }
 h6 {
     position: relative;
-    margin-top: 150px;
 }
 body {
     font-family: Times;
@@ -72,16 +71,54 @@ a:visited {
     background-image: url('../img/biobackground.png');
 }
 
+.leftside {
+    float: left;
+}
+.rightside {
+    float: right;
+}
+
+
 .titles {
     margin: 0 auto;
     width: 100%;
     border-radius: 10px;
     text-align: center;
 }
+h3 {
+    margin: 0;
+}
+#title {
+    padding-top: 20px;
+}
+#bcard {
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url("../img/biophoto.jpg");
+    border: 1px solid black;
+    position: relative;
+    margin: 20px auto;
+    padding: 0;
+}
+
+#container {
+    height: 150px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0;
+}
+
+#centername {
+    margin: 10px 0px;
+    font-size: 120%;
+}
 
 #projectdiv {
     margin: 0 auto;
     width: 90%;
+}
+.contactinfo {
+    font-size: 70%;
 }
 
 #procar {
@@ -155,7 +192,13 @@ div.bottomshadow {
     margin: 25px; 50px; 25px; 50px;
 }
 .icons {
-    height: 200px;
+    height: 80px;
+    margin: 30px;
+}
+.thumbnails {
+    height: 80px;
+    margin: 30px 0px;
+    border-radius: 10px;
 }
 /* full width cells by default */
 .gallery-cell {
