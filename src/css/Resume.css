@@ -161,6 +161,7 @@ div.bottomshadow {
 
 
 .hiddendiv {
+    display: none;
     height: 800px;
     width: 600px;
     position: fixed;
