@@ -1,8 +1,16 @@
 body {
     margin:0;
+    font-family: Times;
+    font-size: medium;
 }
 p {
     margin:0;
+}
+p.tab {
+    text-align: left;
+    text-indent: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 h1 {
     text-align: center;
@@ -12,12 +20,20 @@ h1 {
 h2 {
     margin: 5px;
 }
+h3 {
+    margin: 0;
+}
 h6 {
     position: relative;
+    margin: 10px auto 0px auto;
 }
-body {
-    font-family: Times;
-    font-size: medium;
+a:link {
+    text-decoration: none;
+    color:white;
+}
+a:visited {
+    text-decoration: none;
+    color:white;
 }
 #headerimg {
     background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
@@ -33,14 +49,7 @@ body {
 .center {
     text-align: center;
 }
-a:link {
-    text-decoration: none;
-    color:white;
-}
-a:visited {
-    text-decoration: none;
-    color:white;
-}
+
 #leftbutton {
     font-family: Times;
     font-size: medium;
@@ -85,9 +94,7 @@ a:visited {
     border-radius: 10px;
     text-align: center;
 }
-h3 {
-    margin: 0;
-}
+
 #title {
     padding-top: 20px;
 }
@@ -123,12 +130,12 @@ h3 {
 
 #procar {
     Height: 300px;
-    width: 100%;
+    width: 70%;
     border-radius: 10px;
     position: relative;
     text-align: center;
     padding: 20px;
-    margin-right: 0px;
+    margin: 0 auto;
 }
 
 /* full width cells by default */
@@ -159,19 +166,135 @@ div.bottomshadow {
     height: 100%;
 }
 
+#popupvideo {
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+}
 
-.hiddendiv {
+.glyphicon-remove {
+    float: right;
+    margin: 10px;
+}
+.glyphicon-remove:hover {
+    cursor: pointer
+}
+
+.hiddenbackground {
     display: none;
-    height: 800px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: .1;
+    z-index: 3;
+}
+
+#hiddendiv1 {
+    display: none;
+    height: 80%;
     width: 600px;
     position: fixed;
     top: 75px;
     left: 50%;
     margin-left: -300px;
     background-color: white;
-    z-index: 1;
+    z-index: 5;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px #73787A;
+    overflow: scroll;
 }
+#hiddendiv2 {
+    display: none;
+    height: 80%;
+    width: 600px;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #73787A;
+    overflow: scroll;
+}
+#hiddendiv3 {
+    display: none;
+    height: 80%;
+    width: 600px;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    overflow: scroll;
+}
+#hiddendiv4 {
+    display: none;
+    height: 80%;
+    width: 600px;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    overflow: scroll;
+}
+#hiddendiv5 {
+    display: none;
+    height: 80%;
+    width: 600px;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    overflow: scroll;
+}
+#hiddendiv6 {
+    display: none;
+    height: 80%;
+    width: 600px;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    overflow: scroll;
+}
+#hiddendiv7 {
+    display: none;
+    height: 80%;
+    width: 600px;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    overflow: scroll;
+}
+.popuptitles {
+    float: left;
+    margin: 20px 180px 20px 20px;
+}
+
 .businesscard {
     border: 2px solid black;
     border-radius: 5px;
@@ -200,7 +323,7 @@ div.bottomshadow {
 .icons {
     height: 80px;
     margin: 30px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .icons:hover {
     transform: scale(1.1);
@@ -209,10 +332,11 @@ div.bottomshadow {
     height: 80px;
     margin: 30px 0px;
     border-radius: 10px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .thumbnails:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 /* full width cells by default */
 .gallery-cell {
@@ -225,6 +349,8 @@ div.bottomshadow {
 }
 
 
+
+/* Footer */
 
 #footerimage {
     background-image: url("http://infotogelnusa.com/wp-content/uploads/2016/02/Dark-Blue-Grey-Background-6.jpg");
