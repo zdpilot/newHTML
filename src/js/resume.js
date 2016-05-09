@@ -17,6 +17,10 @@ function card() {
     document.getElementById('email').innerHTML= businesscard.email;
 }
 
+$('document').ready(function() {
+    $('#project1').tooltip();
+});
+
 $("#ana").click(function() {
 
     $(".hiddenbackground").fadeIn(800);
@@ -39,41 +43,12 @@ $("#airborne").click(function() {
 
 });
 
-$("#htmlicon").click(function() {
-
-    $(".hiddenbackground").fadeIn(800);
-    $("#hiddendiv4").fadeIn(800);
-
-});
-$("#cssicon").click(function() {
-
-    $(".hiddenbackground").fadeIn(800);
-    $("#hiddendiv5").fadeIn(800);
-
-});
-$("#booticon").click(function() {
-
-    $(".hiddenbackground").fadeIn(800);
-    $("#hiddendiv6").fadeIn(800);
-
-});
-$("#jsicon").click(function() {
-
-    $(".hiddenbackground").fadeIn(800);
-    $("#hiddendiv7").fadeIn(800);
-
-});
-
 $(".glyphicon-remove").click(function() {
 
     $(".hiddenbackground").fadeOut(400);
     $("#hiddendiv1").fadeOut(400);
     $("#hiddendiv2").fadeOut(400);
     $("#hiddendiv3").fadeOut(400);
-    $("#hiddendiv4").fadeOut(400);
-    $("#hiddendiv5").fadeOut(400);
-    $("#hiddendiv6").fadeOut(400);
-    $("#hiddendiv7").fadeOut(400);
 
 });
 
