@@ -14,7 +14,7 @@ p.tab {
 }
 h1 {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
     margin: 0px;
 }
 h2 {
@@ -166,6 +166,60 @@ div.bottomshadow {
 .carousel {
     height: 100%;
 }
+
+
+
+
+
+
+.projecttitle {
+    background-color: #0C1319;
+    height: 50px;
+    color: white;
+}
+.pdescription {
+    padding-top: 10px;
+}
+
+
+
+#project1 {
+    background-color: black;
+    opacity: .75;
+    height: 230px;
+    width: 48%;
+    margin: -230px auto 0px auto;
+    position: relative;
+    display: none;
+}
+#project2 {
+    background-color: black;
+    opacity: .75;
+    height: 230px;
+    width: 48%;
+    margin: -230px auto 0px auto;
+    position: relative;
+    z-index: 2;
+    overflow: scroll;
+}
+#project3 {
+    background-color: black;
+    opacity: .75;
+    height: 230px;
+    width: 48%;
+    margin: -230px auto 0px auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
 
 #popupvideo {
     position: relative;

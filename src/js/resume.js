@@ -17,15 +17,44 @@ function card() {
     document.getElementById('email').innerHTML= businesscard.email;
 }
 
-$('document').ready(function() {
-    $('#project1').tooltip();
+$(function() {
+    $("#pimg1").mouseenter(function() {
+        $('#project1').fadeIn(500);
+    })
 });
+$(function() {
+    $("#project1").mouseleave(function() {
+        $('#project1').fadeOut(500);
+    })
+});
+
+$(function() {
+    $("#pimg2").mouseenter(function() {
+        $('#project2').fadeIn(500);
+    })
+});
+$(function() {
+    $("#project2").mouseleave(function() {
+        $('#project2').fadeOut(500);
+    })
+});
+
+$(function() {
+    $("#pimg3").mouseenter(function() {
+        $('#project3').fadeIn(500);
+    })
+});
+$(function() {
+    $("#project3").mouseleave(function() {
+        $('#project3').fadeOut(500);
+    })
+});
+
 
 $("#ana").click(function() {
 
     $(".hiddenbackground").fadeIn(800);
     $("#hiddendiv1").fadeIn(800);
-
 });
 
 
@@ -50,6 +79,7 @@ $(".glyphicon-remove").click(function() {
     $("#hiddendiv2").fadeOut(400);
     $("#hiddendiv3").fadeOut(400);
 
+    $("#popupvideo").pauseOnExit(true);
 });
 
 
