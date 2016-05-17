@@ -1,9 +1,12 @@
 h1 {
-    background-color: darkcyan;
+    background-color: darkgreen;
+    text-align: center;
 }
 #scorecard {
-    height: 30%;
-    width: 600px;
+    background-image: url('../img/golfBackground.png');
+    opacity: .5;
+    height: 400px;
+    width: 1502px;
     position: relative;
     margin: 150px auto;
     border: 1px solid darkgrey;
@@ -14,11 +17,45 @@ h1 {
     height: 26px;
     padding: 0px;
     text-align: center;
-
+}
+.front9 {
+    width: 750px;
+    float: left;
+}
+.back9 {
+    width: 750px;
+    float: right;
+}
+.goldTitle {
+    background-color: #FFE57A;
+    height: 24px;
+}
+.blueTitle {
+    background-color: #4760B4;
+    height: 24px;
+}
+.whiteTitle {
+    background-color: #DAE5EB;
+    height: 24px;
+}
+.redTitle {
+    background-color: #9D1517;
+    height: 24px;
 }
 input {
     width: 100%;
     border: none;
+}
+#courseSearch {
+    width: 300px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    float: left;
+    margin-left: 20px;
+}
+#search {
+    margin-left: 20px;
+    border-radius: 4px;
 }
 
 body {
@@ -27,12 +64,7 @@ body {
 p {
     margin:0;
 }
-h1 {
-    text-align: center;
-}
-h2 {
-    padding-left: 55px;
-}
+
 h6 {
     position: center;
     margin: 0 auto;
