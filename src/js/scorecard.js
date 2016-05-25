@@ -1,16 +1,52 @@
 function total() {
-    var p1h1 = document.getElementById('p1h1').value;
-    var p1h2 = document.getElementById('p1h2').value;
-    var p1h3 = document.getElementById('p1h3').value;
-    var p1h4 = document.getElementById('p1h4').value;
-    var p1h5 = document.getElementById('p1h5').value;
-    var p1h6 = document.getElementById('p1h6').value;
-    var p1h7 = document.getElementById('p1h7').value;
-    var p1h8 = document.getElementById('p1h8').value;
-    var p1h9 = document.getElementById('p1h9').value;
-    var p1total = Number(p1h1) + Number(p1h2) + Number(p1h3) + Number(p1h4) + Number(p1h5) + Number(p1h6) + Number(p1h7) + Number(p1h8) + Number(p1h9);
+    var h1 = document.getElementById('h1').value;
+    var h2 = document.getElementById('h2').value;
+    var h3 = document.getElementById('h3').value;
+    var h4 = document.getElementById('h4').value;
+    var h5 = document.getElementById('h5').value;
+    var h6 = document.getElementById('h6').value;
+    var h7 = document.getElementById('h7').value;
+    var h8 = document.getElementById('h8').value;
+    var h9 = document.getElementById('h9').value;
+    var total = Number(p1h1) + Number(p1h2) + Number(p1h3) + Number(p1h4) + Number(p1h5) + Number(p1h6) + Number(p1h7) + Number(p1h8) + Number(p1h9);
     document.getElementById('player1').innerHTML = p1total;
 }
+
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 40.402653, lng: -111.787216},
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+    });
+    var hole1Tee = 'img/golfTee.png';
+    var beachMarker1 = new google.maps.Marker({
+        position: {lat: 40.4031413225741, lng: -111.787138581276},
+        map: map,
+        icon: hole1Tee
+    });
+    var hole1Green = 'img/golfFlag.png';
+    var beachMarker2 = new google.maps.Marker({
+        position: {lat: 40.401887209997, lng: -111.783217191696},
+        map: map,
+        icon: hole1Green
+    });
+
+}
+
+
+function Player() {
+    this.playerName = '';
+    this.scores = [];
+    this.
+    }
+}
+
+
+for (var i = 0; i < player.scores.length; i++) {
+    
+}
+
 
 
 var xhttp = new XMLHttpRequest();
@@ -35,12 +71,13 @@ function courseInformation() {
     xhttp.onreadystatechange = function () {
 
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            var courseInfo = JSON.parse(xhttp.responseText);
-            document.getElementById("myWeather").innerHTML = courseInfo.holes[0].description;
+            var body = JSON.parse(xhttp.responseText);
+            var course = body.course;
+            document.getElementById("myWeather").innerHTML = course.holes[0].tee_boxes[0].yards.description;
         }
     }
 
-    xhttp.open("GET", "https://api.swingbyswing.com/v2/courses/search_by_location?lat=40.487&lng=-105.08&radius=20&active_only=yes&hole_count=18&order_by=distance_from_me_miles&from=1&limit=20&access_token={access_token}", true);
+    xhttp.open("GET", "http://golf-courses-api.herokuapp.com/courses/:id18300", true);
     xhttp.send();
 
 }
@@ -63,7 +100,7 @@ function collectHoles(player) {
     }
 }
 
- var numplayers = 8;
+ var numplayers = document.getElementById("numberOfPlayers").value;
  var numholes = 18;
 
  function buildcard(){
