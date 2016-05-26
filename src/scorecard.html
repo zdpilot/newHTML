@@ -14,7 +14,7 @@
     <title>scorecard</title>
 
 </head>
-<body style="background-color:white" class="textbody">
+<body style="background-color:white" class="textbody" onload="buildcard()">
 
 <div id="headerimg">
 
@@ -37,7 +37,8 @@
     <div id="players"></div>
 
     <div>
-        <label style="margin-left: 25px;">Number Of Players<input id="numberOfPlayers" type="number"/></label>
+        <label style="margin-left: 25px;">Number Of Players<input id="numPlayers"/></label>
+        <button id="Add Players" onclick="startIt()">Add your players</button>
 
         <div id="myWeather"></div>
         <img id="weatherImg"/>
@@ -47,8 +48,12 @@
 
     <div id="map"></div>
 
+    <div id="myTestCourse"></div>
+
     <br/>
     <br/>
+
+    <div id="myCard"></div>
 
     <div class="container-fluid front9">
 
@@ -175,12 +180,14 @@
 </div>
 
 
-
-</body>
-
+<script src="js/jquery.js"></script>
 <script type="text/javascript" src="js/scorecard.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdFTYvB-Hp8ZDWo3juScaIGoyTYU4MRZ8&callback=initMap"
         async defer></script>
+
+</body>
+
+
 
 
 </html>

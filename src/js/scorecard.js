@@ -35,20 +35,6 @@ function initMap() {
 }
 
 
-function Player() {
-    this.playerName = '';
-    this.scores = [];
-    this.
-    }
-}
-
-
-for (var i = 0; i < player.scores.length; i++) {
-    
-}
-
-
-
 var xhttp = new XMLHttpRequest();
 
 
@@ -60,32 +46,33 @@ function currentWeather() {
             document.getElementById("myWeather").innerHTML = myObj.weather[0].description;
             document.getElementById("weatherImg").src = "http://openweathermap.org/img/w/" + myObj.weather[0].icon + ".png";
         }
-    }
+    };
 
     xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Provo&appid=2ed7fbd66625cddb671decbf801e3add", true);
     xhttp.send();
 
 }
 
-function courseInformation() {
-    xhttp.onreadystatechange = function () {
+//Create a list of course ID's that they can choose from.
+var CourseIdArray = [];
 
+var testCourse = {};
+
+getCourseInfo(18300);
+
+function getCourseInfo(id) {
+    var xhttp = new XMLHttpRequest;
+    xhttp.onreadystatechange = function () {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            var body = JSON.parse(xhttp.responseText);
+            testCourse = JSON.parse(xhttp.responseText);
             var course = body.course;
-            document.getElementById("myWeather").innerHTML = course.holes[0].tee_boxes[0].yards.description;
+            document.getElementById("mytestCourse").innerHTML = course.holes[0].tee_boxes[0].yards.description;
         }
-    }
+    };
 
     xhttp.open("GET", "http://golf-courses-api.herokuapp.com/courses/:id18300", true);
     xhttp.send();
 
-}
-
-function runCode() {
-    for(var p = 1; p <= numPlayers; p++) {
-        collectHoles(p);
-    }
 }
 
 
@@ -100,28 +87,28 @@ function collectHoles(player) {
     }
 }
 
- var numplayers = document.getElementById("numberOfPlayers").value;
+ var numplayers = 1;
  var numholes = 18;
 
- function buildcard(){
- beginTimer();
- var holecollection = "";
- var playercollection = "";
+function startIt () {
+    numplayers = document.getElementById('numPlayers').value;
+    function buildcard(){
+     beginTimer();
 
- // create column of player labels
- for(var pl = 1; pl <= numplayers; pl++ ){
- playercollection += "<div id='player" + pl +"' class='holebox playerbox'> Player " + pl + "</div>";
- }
+     var holecollection = "";
+     var playercollection = "";
 
- // create golf hole columns before you add holes to them.
- for(var c = numholes; c >= 1; c-- ){
- holecollection += "<div id='column" + c +"' class='holecol'><div class='holenumbertitle'>" + c + "</div></div>";
- }
- $("#leftcard").html(playercollection);
- $("#rightcard").html(holecollection);
+     for(var pl = 1; pl <= numplayers; pl++ ){
+     playercollection += "<div id='player" + pl +"' class='holebox playerbox'> Player " + pl + "</div>";
+     }
 
- // call the function that builds the holes into the columns
- buildholes();
+     for(var c = numholes; c >= 1; c-- ){
+     holecollection += "<div id='column" + c +"' class='holecol'><div class='holenumbertitle'>" + c + "</div></div>";
+     }
+     $("#leftcard").html(playercollection);
+     $("#rightcard").html(holecollection);
+
+     buildholes();
  }
 
  function buildholes() {
@@ -133,7 +120,7 @@ function collectHoles(player) {
  }
  }
 
-
+}
 
 
 

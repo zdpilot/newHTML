@@ -1,6 +1,11 @@
 h1 {
-    background-color: darkgreen;
+    background-color: #5A7353;
     text-align: center;
+}
+#myCard {
+    height: 60px;
+    width: 50%;
+    float: right;
 }
 #numberOfPlayers {
     height: 26px;
