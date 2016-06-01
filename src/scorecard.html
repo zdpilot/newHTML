@@ -14,7 +14,7 @@
     <title>scorecard</title>
 
 </head>
-<body style="background-color:white" class="textbody" onload="initMap()">
+<body style="background-color:white" class="textbody" onload="buildcard()">
 
 <div id="headerimg">
 
@@ -36,7 +36,7 @@
 
     <div>
         <label style="margin-left: 25px;">Number Of Players<br/><input id="numPlayers"/></label>
-        <button id="Add Players" onclick="buildcard()">Add your players</button>
+        <button id="Add Players">Add your players</button>
 
         <div id="myWeather"></div>
         <img id="weatherImg"/>
@@ -46,9 +46,15 @@
 
     <div id="map"></div>
 
-    <div id="leftcard"></div>
+    <div id="playerInput">
 
-    <div id="rightcard"></div>
+        <div id="leftcard"></div>
+
+        <div id="rightcard"></div>
+
+
+
+    </div>
 
     <br/>
     <br/>

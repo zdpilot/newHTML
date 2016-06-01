@@ -2,16 +2,30 @@ h1 {
     background-color: #5A7353;
     text-align: center;
 }
-#player {
+.playerClass {
+    float: right;
+    border: 1px solid darkgray;
+    width: 15px;
+    height: 15px;
+}
+#playerInput {
+    margin: 25px;
+    float: right;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    position: relative;
+    height: 800px;
+    width: 800px;
+}
+#rightcard {
+    margin-top: 51px;
+    position: relative;
+    float: left;
+    width: 80%;
 }
 .holecol {
+    position: relative;
     float: right;
-    width: 35px;
-    height: 28px;
-    border: 1px solid darkgrey;
-    text-align: center;
-}
-.holebox {
     width: 35px;
     height: 28px;
     border: 1px solid darkgrey;
@@ -24,19 +38,11 @@ h1 {
     border: 1px solid darkgrey;
     text-align: center;
 }
-.holenumbertitle {
-    float: left;
-    position: relative;
-    top: -29px;
-}
 #leftcard {
     float: left;
     margin-top: 80px;
 }
-#rightcard {
-    float: left;
-    margin-top: 80px;
-}
+
 #myCard {
     height: 60px;
     width: 50%;

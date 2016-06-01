@@ -75,7 +75,7 @@ function getCourseInfo(id) {
 
 }
 
-var numplayers = 1;
+var numplayers = 2;
 var numholes = 18;
 
 function buildholes() {
@@ -86,22 +86,25 @@ function buildholes() {
         }
     }
 }
-function collectHoles(player) {
-    for(var p = 1; p <= numPlayers; P++) {
-        for(var h = 1; h <= 18; h++){
-            var hole = "<div id='player" + player + "Hole" + h + "' class='column'" + h +"></div>";
-            golfcourse += hole;
-            $("#scorecard").append(golfcourse);
+function collectHoles() {
+    var p;
+    var h;
+    for(p = 1; p <= numplayers; p++) {
+        for(h = 1; h <= 18; h++) {
+            var playerId = "player" + p + "Hole" + h;
+            var playerClass = "column" + h;
+            var hole = '<div id = playerId class = playerClass></div>';
+            $("#leftcard").append(hole);
         }
     }
 }
 function buildcard(){
-    var numplayers = document.getElementById("numPlayers").value;
+    var numplayers = 4; /* document.getElementById("numPlayers").value; */
     var numholes = 18;
     var holecollection = "";
     var playercollection = "";
 
-    collectHoles();
+
 
     // create column of player labels
     for(var pl = 1; pl <= numplayers; pl++ ){
@@ -109,13 +112,17 @@ function buildcard(){
     }
     // create golf hole columns before you add holes to them.
     for(var c = numholes; c >= 1; c-- ){
-        holecollection += "<input id='column" + c +"' class='holecol'/><div class='holenumbertitle'>" + c + "</div><br/>";
+        holecollection += "<div id='column" + c +"' class='holecol'><div class='holenumbertitle'>" + c + "</div></div>";
     }
     $("#leftcard").html(playercollection);
     $("#rightcard").html(holecollection);
 
     // call the function that builds the holes into the columns
+    collectHoles();
+    
     buildholes();
+
+
 
 
 }

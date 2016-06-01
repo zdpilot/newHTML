@@ -4,7 +4,6 @@
     <list default="true" id="c553194e-63ab-460d-a3ac-6a4f2d8e65cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/scorecard.css" afterPath="$PROJECT_DIR$/src/css/scorecard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scorecard.js" afterPath="$PROJECT_DIR$/src/js/scorecard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scorecard.html" afterPath="$PROJECT_DIR$/src/scorecard.html" />
     </list>
@@ -98,8 +97,8 @@
       <file leaf-file-name="scorecard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scorecard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="-105">
+              <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -107,21 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scorecard.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scorecard.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scorecard.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scorecard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="125">
+              <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -200,8 +199,8 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="515" />
-    <option name="y" value="39" />
+    <option name="x" value="284" />
+    <option name="y" value="1163" />
     <option name="width" value="1353" />
     <option name="height" value="877" />
   </component>
@@ -230,8 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -352,6 +349,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,7 +491,8 @@
       <workItem from="1464112140697" duration="106000" />
       <workItem from="1464182621073" duration="8314000" />
       <workItem from="1464269589282" duration="6000000" />
-      <workItem from="1464618245419" duration="13838000" />
+      <workItem from="1464618245419" duration="13931000" />
+      <workItem from="1464787478632" duration="5706000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1459179053712</created>
@@ -753,11 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464281833428</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="small scorecard changes that worked 6/1/16">
+      <created>1464754038941</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1464754038941</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278993000" />
+    <option name="totallyTimeSpent" value="284792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -769,28 +776,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="515" y="39" width="1353" height="877" extended-state="0" />
+    <frame x="284" y="1163" width="1353" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2117117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906976" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.062261753" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.062420383" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30124223" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3075965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -805,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="small changes 4/4/16-4" />
     <MESSAGE value="Added Footer Menu and Icons, along with a picture of me 4/5/16" />
     <MESSAGE value="General fixes and added a game to the Projects page 4/6/1016" />
     <MESSAGE value="Changed Home layout and added response 4/11/1016" />
@@ -830,7 +836,8 @@
     <MESSAGE value="added some AJAX and JSON weather stuff 5/24/16" />
     <MESSAGE value="added google map of fox hollow 5/25/16" />
     <MESSAGE value="small scorecard changes that don't work 5/26/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="small scorecard changes that don't work 5/26/16" />
+    <MESSAGE value="small scorecard changes that worked 6/1/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="small scorecard changes that worked 6/1/16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1104,6 +1111,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/Home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
@@ -1156,14 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/resume.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1176,26 +1183,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scorecard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="-105">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
+    <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
+    <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        <state relative-caret-position="125">
+          <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
           <folding />
         </state>
       </provider>
