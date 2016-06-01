@@ -2,6 +2,41 @@ h1 {
     background-color: #5A7353;
     text-align: center;
 }
+#player {
+}
+.holecol {
+    float: right;
+    width: 35px;
+    height: 28px;
+    border: 1px solid darkgrey;
+    text-align: center;
+}
+.holebox {
+    width: 35px;
+    height: 28px;
+    border: 1px solid darkgrey;
+    text-align: center;
+}
+.playerbox {
+    float: left;
+    width: 120px;
+    height: 28px;
+    border: 1px solid darkgrey;
+    text-align: center;
+}
+.holenumbertitle {
+    float: left;
+    position: relative;
+    top: -29px;
+}
+#leftcard {
+    float: left;
+    margin-top: 80px;
+}
+#rightcard {
+    float: left;
+    margin-top: 80px;
+}
 #myCard {
     height: 60px;
     width: 50%;
@@ -89,10 +124,7 @@ h1 {
     background-color: #9D1517;
     height: 24px;
 }
-input {
-    width: 100%;
-    border: none;
-}
+
 #courseSearch {
     width: 300px;
     border: 1px solid darkgrey;
