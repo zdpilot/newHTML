@@ -75,31 +75,13 @@ function getCourseInfo(id) {
 
 }
 
-var numplayers = 2;
+var numplayers = 1;
 var numholes = 18;
 
-function buildholes() {
-    // add 18 holes to the columns
-    for(var p = 1; p <= numplayers; p++ ){
-        for(var h = 1; h <= numholes; h++){
-            $("#column" + h).append("<div id='player" + p + "hole" + h + "' class='holebox'></div>");
-        }
-    }
-}
-function collectHoles() {
-    var p;
-    var h;
-    for(p = 1; p <= numplayers; p++) {
-        for(h = 1; h <= 18; h++) {
-            var playerId = "player" + p + "Hole" + h;
-            var playerClass = "column" + h;
-            var hole = '<div id = playerId class = playerClass></div>';
-            $("#leftcard").append(hole);
-        }
-    }
-}
+
+
 function buildcard(){
-    var numplayers = 4; /* document.getElementById("numPlayers").value; */
+    var numplayers = document.getElementById("numPlayers").value;
     var numholes = 18;
     var holecollection = "";
     var playercollection = "";
@@ -118,10 +100,30 @@ function buildcard(){
     $("#rightcard").html(holecollection);
 
     // call the function that builds the holes into the columns
-    collectHoles();
-    
-    buildholes();
+    function collectHoles() {
+        var p;
+        var h;
+        for(p = 1; p <= numplayers; p++) {
+            for(h = 1; h <= 18; h++) {
+                var playerId = "player" + p + "Hole" + h;
+                var playerClass = "column" + h;
+                var hole = '<div id="holeInputs"><input id = playerId class = playerClass></input></div>';
+                $("#rightcard").append(hole);
+            }
+        }
+    }
 
+    function buildholes() {
+        // add 18 holes to the columns
+        for(var p = 1; p <= numplayers; p++ ){
+            for(var h = 1; h <= numholes; h++){
+                $("#column" + h).append("<div id='player" + p + "hole" + h + "' class='holebox'></div>");
+            }
+        }
+    }
+
+    collectHoles();
+    buildholes();
 
 
 
