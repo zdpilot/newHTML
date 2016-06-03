@@ -53,6 +53,15 @@ function currentWeather() {
 
 }
 
+
+function loadMe() {
+    $
+}
+
+
+
+
+
 //Create a list of course ID's that they can choose from.
 var CourseIdArray = [];
 
@@ -85,19 +94,22 @@ function buildcard(){
     var numholes = 18;
     var holecollection = "";
     var playercollection = "";
+    var grandTotalCollection = "";
 
 
 
     // create column of player labels
     for(var pl = 1; pl <= numplayers; pl++ ){
-        playercollection += "<input id='player'" + pl + " class='holebox playerbox' placeholder='Player Name'/><br/>";
+        playercollection += "<input id='player" + pl + "' class='holebox playerbox' placeholder='Player Name'/><br/>";
+        grandTotalCollection += "<div id='grand" + pl + "' class='grandTotal'></div>";
     }
     // create golf hole columns before you add holes to them.
     for(var c = numholes; c >= 1; c-- ){
         holecollection += "<div id='column" + c +"' class='holecol'><div class='holenumbertitle'>" + c + "</div></div>";
     }
+
     $("#leftcard").html(playercollection);
-    $("#rightcard").html(holecollection);
+    $("#rightcard").html(("<div class='grandTotal'><div class='grandTotal'>Total</div>" + grandTotalCollection + "</div>") + holecollection);
 
     // call the function that builds the holes into the columns
     function collectHoles() {
@@ -107,17 +119,28 @@ function buildcard(){
             for(h = 1; h <= 18; h++) {
                 var playerId = "player" + p + "Hole" + h;
                 var playerClass = "column" + h;
-                var hole = '<div id="holeInputs"><input id = playerId class = playerClass></input></div>';
+                var hole = "<div id='holeInputs'><input id = playerId class = playerClass></input></div>";
                 $("#rightcard").append(hole);
             }
         }
+    }
+
+    function calculateScore(thePlayer) {
+
+        var theTotal = 0;
+
+        for(var t = 1;t <= numholes; t++) {
+            var playerId = "playerId" + thePlayer + "Hole" + t;
+            theTotal += Number($(playerId).val());
+        }
+        $("#grand" + thePlayer).html(theTotal);
     }
 
     function buildholes() {
         // add 18 holes to the columns
         for(var p = 1; p <= numplayers; p++ ){
             for(var h = 1; h <= numholes; h++){
-                $("#column" + h).append("<div id='player" + p + "hole" + h + "' class='holebox'></div>");
+                $("#column" + h).append("<div onkeyup='calculateScore(" + p + ")' id='player" + p + "hole" + h + "' class='holebox'></div>");
             }
         }
     }
@@ -131,16 +154,15 @@ function buildcard(){
 
 
 function courseInformationCard(){
-    var infoRows = 5;       //['black', 'blue', 'white', 'handicap', 'par'];
+    var infoRows = ['Black / Gold', 'Blue', 'White', 'Red', 'Handicap', 'Par'];
     var infoColumns = 18;
     var columncollection = "";
     var rowcollection = "";
 
-//What you were working on is changing the id name for rowcollection, turning it into a div, and formatting it to see if the names appear.
-
     // create column of player labels
-    for(var pl = 1; pl <= infoRows; pl++ ){
-        rowcollection += "<input id='player'" + pl + " class='holebox playerbox' placeholder='Info Title'/><br/>";
+    for(var pl = 0; pl < infoRows.length; pl++ ){
+        rowcollection += "<div id='infoplayer" + pl + "' class='holebox titlebox'>" + infoRows[pl] + "</div>";
+           // "<span>par" + testCourse.course.holes[pl].tee_boxes[0].par + "</span>
     }
     // create golf hole columns before you add holes to them.
     for(var c = infoColumns; c >= 1; c-- ){
@@ -153,11 +175,11 @@ function courseInformationCard(){
     function collectHoles() {
         var p;
         var h;
-        for(p = 1; p <= infoRows; p++) {
+        for(p = 1; p <= infoRows.length; p++) {
             for(h = 1; h <= 18; h++) {
                 var playerId = "player" + p + "Hole" + h;
                 var playerClass = "column" + h;
-                var hole = '<div id="holeInputs"><input id = playerId class = playerClass></input></div>';
+                var hole = '<div id="holeInputs"><div id = playerId class = playerClass></div></div>';
                 $("#rightInfoCard").append(hole);
             }
         }
