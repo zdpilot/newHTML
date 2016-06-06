@@ -79,7 +79,7 @@ function getCourseInfo(id) {
         }
     };
 
-    xhttp.open("GET", "http://golf-courses-api.herokuapp.com/courses/:id18300", true);
+    xhttp.open("GET", "http://golf-courses-api.herokuapp.com/courses/18300", true);
     xhttp.send();
 
 }
@@ -95,6 +95,7 @@ function buildcard(){
     var holecollection = "";
     var playercollection = "";
     var grandTotalCollection = "";
+    var hole = "";
 
 
 
@@ -105,11 +106,10 @@ function buildcard(){
     }
     // create golf hole columns before you add holes to them.
     for(var c = numholes; c >= 1; c-- ){
-        holecollection += "<div id='column" + c +"' class='holecol'><div class='holenumbertitle'>" + c + "</div></div>";
+        holecollection += "<div id='column" + c +"' class='holecol'><div class='holenumbertitle'>" + c + "</div></div>" ;
     }
 
-    $("#leftcard").html(playercollection);
-    $("#rightcard").html(("<div class='grandTotal'><div class='grandTotal'>Total</div>" + grandTotalCollection + "</div>") + holecollection);
+
 
     // call the function that builds the holes into the columns
     function collectHoles() {
@@ -119,22 +119,22 @@ function buildcard(){
             for(h = 1; h <= 18; h++) {
                 var playerId = "player" + p + "Hole" + h;
                 var playerClass = "column" + h;
-                var hole = "<div id='holeInputs'><input id = playerId class = playerClass></input></div>";
+                hole = "<div id='holeInputs'><input id = " + playerId + " class='holeBox' onkeyup='calculateScore(" + p + ")'></div>";
                 $("#rightcard").append(hole);
+
             }
+            // Add the total cells to the total column in the players card
+            // We add them after adding the holes so that they all align correctly
+            var totalCell = $("<div id='grand" + p + "' class='grandTotal'></div>")
+            $("#rightcard").append(totalCell);
         }
     }
 
-    function calculateScore(thePlayer) {
+    $("#leftcard").html(playercollection);
+    $("#rightcard").html(("<div class='grandTotal'><div>Total</div></div>") + holecollection);
 
-        var theTotal = 0;
 
-        for(var t = 1;t <= numholes; t++) {
-            var playerId = "playerId" + thePlayer + "Hole" + t;
-            theTotal += Number($(playerId).val());
-        }
-        $("#grand" + thePlayer).html(theTotal);
-    }
+
 
     function buildholes() {
         // add 18 holes to the columns
@@ -142,6 +142,7 @@ function buildcard(){
             for(var h = 1; h <= numholes; h++){
                 $("#column" + h).append("<div onkeyup='calculateScore(" + p + ")' id='player" + p + "hole" + h + "' class='holebox'></div>");
             }
+
         }
     }
 
@@ -191,6 +192,7 @@ function courseInformationCard(){
             for(var h = 1; h <= numholes; h++){
                 $("#column" + h).append("<div id='player" + p + "hole" + h + "' class='holebox'></div>");
             }
+
         }
     }
 
@@ -198,7 +200,16 @@ function courseInformationCard(){
     buildholes();
 
 }
+function calculateScore(thePlayer) {
+    console.log("Got Here");
+    var theTotal = 0;
 
+    for(var t = 1;t <= numholes; t++) {
+        var playerId = "#player" + thePlayer + "Hole" + t;
+        theTotal += Number($(playerId).val());
+    }
+    $("#grand" + thePlayer).html(theTotal);
+}
 
 
 
