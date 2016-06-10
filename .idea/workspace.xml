@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c553194e-63ab-460d-a3ac-6a4f2d8e65cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/newGolfCourse.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/scorecard.css" afterPath="$PROJECT_DIR$/src/css/scorecard.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scorecard.js" afterPath="$PROJECT_DIR$/src/js/scorecard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scorecard.html" afterPath="$PROJECT_DIR$/src/scorecard.html" />
     </list>
     <ignored path="newHTML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +30,17 @@
       <file leaf-file-name="scorecard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scorecard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="680">
+              <caret line="310" column="107" selection-start-line="310" selection-start-column="107" selection-end-line="310" selection-end-column="107" />
+              <caret line="311" column="107" selection-start-line="311" selection-start-column="107" selection-end-line="311" selection-end-column="107" />
+              <caret line="312" column="107" selection-start-line="312" selection-start-column="107" selection-end-line="312" selection-end-column="107" />
+              <caret line="313" column="107" selection-start-line="313" selection-start-column="107" selection-end-line="313" selection-end-column="107" />
+              <caret line="314" column="107" selection-start-line="314" selection-start-column="107" selection-end-line="314" selection-end-column="107" />
+              <caret line="315" column="107" selection-start-line="315" selection-start-column="107" selection-end-line="315" selection-end-column="107" />
+              <caret line="316" column="107" selection-start-line="316" selection-start-column="107" selection-end-line="316" selection-end-column="107" />
+              <caret line="317" column="107" selection-start-line="317" selection-start-column="107" selection-end-line="317" selection-end-column="107" />
+              <caret line="318" column="107" selection-start-line="318" selection-start-column="107" selection-end-line="318" selection-end-column="107" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,8 +48,8 @@
       <file leaf-file-name="scorecard.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state relative-caret-position="333">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -50,13 +58,21 @@
       <file leaf-file-name="scorecard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
+            <state relative-caret-position="612">
+              <caret line="390" column="1" selection-start-line="390" selection-start-column="1" selection-end-line="390" selection-end-column="1" />
               <folding>
-                <marker date="1465229677000" expanded="true" signature="5095:5149" placeholder="..." />
-                <marker date="1465229677000" expanded="true" signature="5095:5208" placeholder="..." />
-                <marker date="1465229677000" expanded="true" signature="5145:5149" placeholder="..." />
+                <marker date="1465531051000" expanded="true" signature="27321:27351" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resume.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/resume.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,8 +119,8 @@
         <option value="$PROJECT_DIR$/src/Resume.html" />
         <option value="$PROJECT_DIR$/src/js/resume.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/scorecard.html" />
         <option value="$PROJECT_DIR$/src/css/scorecard.css" />
+        <option value="$PROJECT_DIR$/src/scorecard.html" />
         <option value="$PROJECT_DIR$/src/js/scorecard.js" />
       </list>
     </option>
@@ -122,10 +138,10 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="313" />
-    <option name="y" value="1124" />
+    <option name="x" value="151" />
+    <option name="y" value="85" />
     <option name="width" value="1537" />
-    <option name="height" value="915" />
+    <option name="height" value="914" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -153,7 +169,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,6 +289,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,7 +436,10 @@
       <workItem from="1464894418938" duration="6439000" />
       <workItem from="1464960021495" duration="7811000" />
       <workItem from="1465075319388" duration="6210000" />
-      <workItem from="1465219334086" duration="4641000" />
+      <workItem from="1465219334086" duration="6975000" />
+      <workItem from="1465306064911" duration="5303000" />
+      <workItem from="1465392328034" duration="7505000" />
+      <workItem from="1465482906278" duration="17446000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1459179053712</created>
@@ -716,11 +735,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464971193406</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Got the Totals figured out!!!!! 6/6/16/">
+      <created>1465230231032</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1465230231032</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314006000" />
+    <option name="totallyTimeSpent" value="346594000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -732,13 +758,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="313" y="1124" width="1537" height="915" extended-state="0" />
+    <frame x="151" y="85" width="1537" height="914" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18601583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906976" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05939394" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05946602" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -768,7 +794,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Small changes and made some photos local. 4/13/16" />
     <MESSAGE value="Minimal changes 4/14/16" />
     <MESSAGE value="Added a &quot;linkedin&quot; resume page 4/15/16" />
     <MESSAGE value="Changed resume page 4/15/16-2" />
@@ -793,7 +818,8 @@
     <MESSAGE value="Players are dynamic 6/2/16" />
     <MESSAGE value="added a dynamic course info card 6/2/16/2" />
     <MESSAGE value="added a totals column 6/3/16/" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a totals column 6/3/16/" />
+    <MESSAGE value="Got the Totals figured out!!!!! 6/6/16/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got the Totals figured out!!!!! 6/6/16/" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1060,13 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="97" column="200" selection-start-line="93" selection-start-column="84" selection-end-line="97" selection-end-column="200" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1095,39 +1114,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/resume.js">
+    <entry file="file://$PROJECT_DIR$/src/Projects.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scorecard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="585">
+          <caret line="97" column="200" selection-start-line="93" selection-start-column="84" selection-end-line="97" selection-end-column="200" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="333">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/resume.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scorecard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="310" column="107" selection-start-line="310" selection-start-column="107" selection-end-line="310" selection-end-column="107" />
+          <caret line="311" column="107" selection-start-line="311" selection-start-column="107" selection-end-line="311" selection-end-column="107" />
+          <caret line="312" column="107" selection-start-line="312" selection-start-column="107" selection-end-line="312" selection-end-column="107" />
+          <caret line="313" column="107" selection-start-line="313" selection-start-column="107" selection-end-line="313" selection-end-column="107" />
+          <caret line="314" column="107" selection-start-line="314" selection-start-column="107" selection-end-line="314" selection-end-column="107" />
+          <caret line="315" column="107" selection-start-line="315" selection-start-column="107" selection-end-line="315" selection-end-column="107" />
+          <caret line="316" column="107" selection-start-line="316" selection-start-column="107" selection-end-line="316" selection-end-column="107" />
+          <caret line="317" column="107" selection-start-line="317" selection-start-column="107" selection-end-line="317" selection-end-column="107" />
+          <caret line="318" column="107" selection-start-line="318" selection-start-column="107" selection-end-line="318" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
+        <state relative-caret-position="612">
+          <caret line="390" column="1" selection-start-line="390" selection-start-column="1" selection-end-line="390" selection-end-column="1" />
           <folding>
-            <marker date="1465229677000" expanded="true" signature="5095:5149" placeholder="..." />
-            <marker date="1465229677000" expanded="true" signature="5095:5208" placeholder="..." />
-            <marker date="1465229677000" expanded="true" signature="5145:5149" placeholder="..." />
+            <marker date="1465531051000" expanded="true" signature="27321:27351" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,146 @@ h1 {
     background-color: #5A7353;
     text-align: center;
 }
+#map {
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 55px 0 25px 25px;
+    border: 1px solid darkgray;
+    float: left;
+}
+#topCard {
+    position: relative;
+    float: right;
+    height: 280px;
+    width: 965px;
+    margin: 25px 50px 25px 50px;
+}
+#bottomCard {
+    position: relative;
+    float: right;
+    height: 280px;
+    width: 965px;
+    margin: 10px 50px 25px 50px;
+}
+.r1 {
+    float: left;
+    width: 400px;
+    margin: 10px 15px 0 10px;
+}
+.r2 {
+    float: left;
+    width: 500px;
+    margin: 10px auto 0 0;
+}
 
+.gold {
+    background-color: #FFE57A;
+}
+.blue {
+    background-color: #4760B4;
+}
+.white {
+    background-color: #DAE5EB;
+}
+.red {
+    background-color: #9D1517;
+}
+
+.topCardTitles {
+    float: left;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+}
+.rowTitles {
+    width: 35px;
+    height: 28px;
+    float: left;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    text-align: center;
+}
+#addPlayer {
+    position: relative;
+    float: left;
+    margin: 0 25px 0 72px;
+    border-radius: 5px;
+}
+#removePlayer {
+    position: relative;
+    float: left;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mytestCourse {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+.totalTitle {
+    width: 50px;
+    height: 28px;
+    position: relative;
+    float: right;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+}
+.holenumbertitle {
+    position: relative;
+    float: right;
+    width: 35px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+}
 #infoplayer0 {
     background-color: #FFE57A;
     width: 120px;
@@ -65,7 +204,10 @@ h1 {
     height: 28px;
 }
 .holeBox {
-    width: 100%;
+    width: 35px;
+    height: 28px;
+    border: 1px solid darkgrey;
+    text-align: center;
 }
 .grandTotal {
     position: relative;
@@ -130,14 +272,7 @@ h1 {
     border-radius: 5px;
     margin-left: 25px;
 }
-#map {
-    height: 800px;
-    width: 600px;
-    border-radius: 10px;
-    margin: 25px 0 25px 25px;
-    border: 1px solid darkgray;
-    float: left;
-}
+
 #scorecard {
     height: 1000px;
     width: 1502px;
@@ -151,9 +286,8 @@ h1 {
     height: 800px;
     width: 1502px;
     position: relative;
-    top: -600px;
     margin: 0 auto;
-    background-image: url('../img/golfBackground.png');
+    background-image: url('../img/newGolfCourse.jpg');
     opacity: .5;
     z-index: 1;
     border-radius: 10px;
@@ -175,48 +309,7 @@ h1 {
     margin-left: 20px;
     border-radius: 4px;
 }
-.divborder {
-    border: 1px solid black;
-    height: 26px;
-    padding: 0px;
-    text-align: center;
-}
-.front9 {
-    width: 750px;
-    float: right;
-}
-.back9 {
-    width: 750px;
-    float: right;
-}
-.goldTitle {
-    background-color: #FFE57A;
-    height: 24px;
-}
-.blueTitle {
-    background-color: #4760B4;
-    height: 24px;
-}
-.whiteTitle {
-    background-color: #DAE5EB;
-    height: 24px;
-}
-.redTitle {
-    background-color: #9D1517;
-    height: 24px;
-}
 
-#courseSearch {
-    width: 300px;
-    border: 1px solid darkgrey;
-    border-radius: 5px;
-    float: left;
-    margin-left: 20px;
-}
-#search {
-    margin-left: 20px;
-    border-radius: 4px;
-}
 
 body {
     margin:0;
