@@ -1,5 +1,4 @@
 
-
 var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -427,17 +426,7 @@ function currentWeather() {
 
 }
 
-
-
-
-
-//Create a list of course ID's that they can choose from.
-var CourseIdArray = [];
-
 var myCourse = {};
-
-var goldYards = {};
-
 
 function getCourseInfo() {
     var xhttp = new XMLHttpRequest;
@@ -867,19 +856,14 @@ function playertotals() {
 }
 
 
-function addPlayer() {
-
-}
 
 
 
 
 
 
-
-
-
-
+// These are my previous attempts at making my card dynamic.
+/*
 
 var numplayers = 1;
 var numholes = 18;
@@ -1004,8 +988,6 @@ function calculateScore(thePlayer) {
     }
     $("#grand" + thePlayer).html(theTotal);
 }
-
-
-
+*/
 
 
