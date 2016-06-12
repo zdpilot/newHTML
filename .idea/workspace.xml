@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c553194e-63ab-460d-a3ac-6a4f2d8e65cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/scorecard.css" afterPath="$PROJECT_DIR$/src/css/scorecard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scorecard.js" afterPath="$PROJECT_DIR$/src/js/scorecard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scorecard.html" afterPath="$PROJECT_DIR$/src/scorecard.html" />
     </list>
     <ignored path="newHTML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,8 +146,8 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="264" />
-    <option name="y" value="54" />
+    <option name="x" value="36" />
+    <option name="y" value="28" />
     <option name="width" value="1537" />
     <option name="height" value="914" />
   </component>
@@ -450,7 +447,7 @@
       <workItem from="1465219334086" duration="6975000" />
       <workItem from="1465306064911" duration="5303000" />
       <workItem from="1465392328034" duration="7505000" />
-      <workItem from="1465482906278" duration="28639000" />
+      <workItem from="1465482906278" duration="28809000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1459179053712</created>
@@ -760,11 +757,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465531163435</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="98% done with scorecard Hard-Code 6/10/16">
+      <created>1465624115752</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1465624115752</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357787000" />
+    <option name="totallyTimeSpent" value="357957000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -776,7 +780,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="264" y="54" width="1537" height="914" extended-state="0" />
+    <frame x="36" y="28" width="1537" height="914" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -812,7 +816,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a &quot;linkedin&quot; resume page 4/15/16" />
     <MESSAGE value="Changed resume page 4/15/16-2" />
     <MESSAGE value="Renamed main file from newHTML to My First Project 4/18/16" />
     <MESSAGE value="Added transition 4/18/16-2" />
@@ -837,7 +840,8 @@
     <MESSAGE value="added a totals column 6/3/16/" />
     <MESSAGE value="Got the Totals figured out!!!!! 6/6/16/" />
     <MESSAGE value="Restarted HARD-CODING 6/9/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restarted HARD-CODING 6/9/16" />
+    <MESSAGE value="98% done with scorecard Hard-Code 6/10/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="98% done with scorecard Hard-Code 6/10/16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
