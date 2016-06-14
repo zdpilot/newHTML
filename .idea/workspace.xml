@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c553194e-63ab-460d-a3ac-6a4f2d8e65cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/dragonSprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/sheet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/flappyBirdIsh.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/flappyBirdIsh.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/flappyBirdIsh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/gameSpriteSheet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/scorecard.css" afterPath="$PROJECT_DIR$/src/css/scorecard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scorecard.js" afterPath="$PROJECT_DIR$/src/js/scorecard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scorecard.html" afterPath="$PROJECT_DIR$/src/scorecard.html" />
     </list>
     <ignored path="newHTML.iws" />
@@ -29,17 +33,17 @@
       <file leaf-file-name="scorecard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scorecard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="501" column="5" selection-start-line="501" selection-start-column="5" selection-end-line="501" selection-end-column="5" />
+            <state relative-caret-position="775">
+              <caret line="503" column="51" selection-start-line="503" selection-start-column="51" selection-end-line="503" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scorecard.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scorecard.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="6270">
               <caret line="418" column="23" selection-start-line="418" selection-start-column="23" selection-end-line="418" selection-end-column="23" />
               <folding />
             </state>
@@ -49,8 +53,8 @@
       <file leaf-file-name="scorecard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12960">
-              <caret line="864" column="60" selection-start-line="864" selection-start-column="60" selection-end-line="864" selection-end-column="60" />
+            <state relative-caret-position="615">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
               <folding>
                 <marker date="1465707201000" expanded="true" signature="46057:46087" placeholder="..." />
               </folding>
@@ -58,32 +62,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resume.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Resume.html">
+      <file leaf-file-name="flappyBirdIsh.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/flappyBirdIsh.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1857">
-              <caret line="175" column="34" selection-start-line="175" selection-start-column="34" selection-end-line="175" selection-end-column="34" />
+            <state relative-caret-position="240">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resume.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/Resume.css">
+      <file leaf-file-name="flappyBirdIsh.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/flappyBirdIsh.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="394" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/resume.js">
+      <file leaf-file-name="flappyBirdIsh.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/flappyBirdIsh.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="208">
+              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#47#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameSpriteSheet.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/gameSpriteSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="113" selection-start-line="15" selection-start-column="113" selection-end-line="15" selection-end-column="113" />
+              <folding>
+                <element signature="e#0#47#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,8 +149,12 @@
         <option value="$PROJECT_DIR$/src/js/resume.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/js/scorecard.js" />
-        <option value="$PROJECT_DIR$/src/scorecard.html" />
         <option value="$PROJECT_DIR$/src/css/scorecard.css" />
+        <option value="$PROJECT_DIR$/src/scorecard.html" />
+        <option value="$PROJECT_DIR$/src/css/flappyBirdIsh.js.css" />
+        <option value="$PROJECT_DIR$/src/flappyBirdIsh.html" />
+        <option value="$PROJECT_DIR$/src/js/gameSpriteSheet.js" />
+        <option value="$PROJECT_DIR$/src/js/flappyBirdIsh.js" />
       </list>
     </option>
   </component>
@@ -149,8 +171,8 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="327" />
-    <option name="y" value="69" />
+    <option name="x" value="153" />
+    <option name="y" value="1187" />
     <option name="width" value="1537" />
     <option name="height" value="915" />
   </component>
@@ -276,24 +298,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My First Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My First Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -315,6 +319,9 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src/js" />
@@ -450,7 +457,10 @@
       <workItem from="1465219334086" duration="6975000" />
       <workItem from="1465306064911" duration="5303000" />
       <workItem from="1465392328034" duration="7505000" />
-      <workItem from="1465482906278" duration="31753000" />
+      <workItem from="1465482906278" duration="32344000" />
+      <workItem from="1465824288998" duration="862000" />
+      <workItem from="1465827511615" duration="3933000" />
+      <workItem from="1465910720071" duration="4514000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1459179053712</created>
@@ -774,11 +784,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465706713416</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Finished scorecard project/ little corrections 6/11/16/2">
+      <created>1465709774001</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1465709774001</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360901000" />
+    <option name="totallyTimeSpent" value="370801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,14 +807,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="327" y="69" width="1537" height="915" extended-state="0" />
-    <editor active="false" />
+    <frame x="153" y="1187" width="1537" height="915" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18601583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18601583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906976" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.059538275" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05939394" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -806,6 +822,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -826,7 +843,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed main file from newHTML to My First Project 4/18/16" />
     <MESSAGE value="Added transition 4/18/16-2" />
     <MESSAGE value="Finished resume page and small changes 4/19/16" />
     <MESSAGE value="Added a carousel to my resume page 4/28/16" />
@@ -851,48 +867,14 @@
     <MESSAGE value="Restarted HARD-CODING 6/9/16" />
     <MESSAGE value="98% done with scorecard Hard-Code 6/10/16" />
     <MESSAGE value="Finished scorecard project 6/11/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished scorecard project 6/11/16" />
+    <MESSAGE value="Finished scorecard project/ little corrections 6/11/16/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished scorecard project/ little corrections 6/11/16/2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AboutMe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="89" selection-start-line="126" selection-start-column="89" selection-end-line="126" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="89" selection-start-line="126" selection-start-column="89" selection-end-line="126" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AboutMe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1129,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="97" column="200" selection-start-line="93" selection-start-column="84" selection-end-line="97" selection-end-column="200" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,49 +1125,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1634">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1857">
+        <state relative-caret-position="2625">
           <caret line="175" column="34" selection-start-line="175" selection-start-column="34" selection-end-line="175" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12960">
-          <caret line="864" column="60" selection-start-line="864" selection-start-column="60" selection-end-line="864" selection-end-column="60" />
-          <folding>
-            <marker date="1465707201000" expanded="true" signature="46057:46087" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scorecard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="501" column="5" selection-start-line="501" selection-start-column="5" selection-end-line="501" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/Resume.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="5520">
           <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="394" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scorecard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="503" column="51" selection-start-line="503" selection-start-column="51" selection-end-line="503" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/scorecard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
+        <state relative-caret-position="6270">
           <caret line="418" column="23" selection-start-line="418" selection-start-column="23" selection-end-line="418" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scorecard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <marker date="1465707201000" expanded="true" signature="46057:46087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/flappyBirdIsh.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/dragonSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/flappyBirdIsh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/gameSpriteSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="113" selection-start-line="15" selection-start-column="113" selection-end-line="15" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/flappyBirdIsh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
