@@ -22,8 +22,8 @@ function windowSetup() {
     //Set the width and height if we are on a display with a width > 500px (eg. a desktop or tablet environment).
     var inputEvent = "touchStart";
     if(width >= 500){
-        width = 380;
-        height = 430;
+        width = 400;
+        height = 600;
         inputEvent = "mousedown";
     }
 
@@ -43,7 +43,7 @@ function loadGraphics() {
     //initiate graphics and an ok button
 
     var img = new Image();
-    img.src="img/sheet.png";  //sprite image
+    img.src="img/gameSprite.png";  //sprite image
     img.onload = function () {
         initSprites(this);
         renderingContext.fillStyle = backgroundSprite.color;
@@ -51,7 +51,7 @@ function loadGraphics() {
         backgroundSprite.draw(renderingContext, 0, height - backgroundSprite.height);
         backgroundSprite.draw(renderingContext, backgroundSprite.width, height - backgroundSprite.height);
 
-        dragonSprite[0].draw(renderingContext, 50, 50, 142, 50);
+        dragonSprite[0].draw(renderingContext, 100, 150, 142, 50);
 
         /*okButton = {
             x: (width - okButtonSprite.width) / 2,

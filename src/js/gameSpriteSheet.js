@@ -18,9 +18,9 @@ Sprite.prototype.draw = function (renderingContext, x, y) {
 
 function initSprites(img) {
     dragonSprite = [
-        new Sprite(img, 176, 115, 42, 28),
-        new Sprite(img, 176, 144, 45, 45),
-        new Sprite(img, 176, 172, 45, 45)
+        new Sprite(img, 225, 374, 67, 36),
+        new Sprite(img, 295, 374, 67, 36),
+        new Sprite(img, 364, 354, 65, 51)
     ];
 
     backgroundSprite = new Sprite(img, 0, 0, 138, 114);
