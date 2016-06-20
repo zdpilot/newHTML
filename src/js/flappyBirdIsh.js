@@ -7,7 +7,10 @@ var currentState;
 var renderingContext;
 var frames = 0;
 
+var playButton = 0;
+
 var foregroundPosition = 0;
+var backgroundPosition = 0;
 
 var states = {
     Splash: 0,
@@ -27,7 +30,7 @@ function windowSetup() {
     var inputEvent = "touchStart";
     if(width >= 500){
         width = 600;
-        height = 572;
+        height = 570;
         inputEvent = "mousedown";
     }
 
@@ -37,7 +40,7 @@ function windowSetup() {
 function canvasSetup() {
 
     canvas = document.createElement("canvas");
-    canvas.style.border = "15px solid black";
+    canvas.style.border = "10px solid black";
     canvas.width = width;
     canvas.height = height;
     renderingContext = canvas.getContext("2d");
@@ -47,7 +50,7 @@ function loadGraphics() {
     //initiate graphics and an ok button
 
     var img = new Image();
-    img.src="img/gameSprite.png";  //sprite image
+    img.src="img/newGameSprite.png";  //sprite image
     img.onload = function () {
         initSprites(this);
         renderingContext.fillStyle = backgroundSprite.color;
@@ -56,12 +59,6 @@ function loadGraphics() {
 
         //dragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
 
-        /*okButton = {
-            x: (width - okButtonSprite.width) / 2,
-            y: height - 200,
-            width: okButtonSprite.width,
-            height: okButtonSprite.height
-        };  */
         gameLoop();
     };
 }
@@ -69,7 +66,6 @@ function loadGraphics() {
 function Dragon() {
     this.x = 280;
     this.y = 245;
-    //this.draw = function (renderingContext);
 
     this.frame = 0;
     this.velocity = 0;
@@ -158,10 +154,11 @@ function gameLoop() {
 function update() {
     frames ++;
 
-    /*if(currentState !== states.Score) {
-        foregroundPosition = (foregroundPosition - 2) % 14; // Moves left 2 pixels each frame. Wrap every 14px.
+    if(currentState !== states.Score) {
+        foregroundPosition = (foregroundPosition - 2) % 999; // Moves left 2 pixels each frame. Wrap every 999px.
+        backgroundPosition = (backgroundPosition - .5) % 999;
     }
-    if (currentState === states.Game) {
+    /*if (currentState === states.Game) {
         crystals.update();
     }*/
 
@@ -171,18 +168,18 @@ function update() {
 function render() {
     renderingContext.fillRect(0, 0, width, height);
 
-    backgroundSprite.draw(renderingContext, 0, 0);
+    backgroundSprite.draw(renderingContext, backgroundPosition, 0);
 
     //crystals.draw(renderingContext);
     dragon.draw(renderingContext);
 
     /*if (currentState === states.Score) {
-        okButtonSprite.draw(renderingContext, okButton.x, okButton.y);
-    }*/
+        playButtonSprite.draw(renderingContext, 250, 250);
+    } */
 
     //draw foreground sprites
     //foregroundSprite.draw(renderingContext, foregroundPosition, height - foregroundSprite.height);
-    foregroundSprite.draw(renderingContext, 0, 500);
+    foregroundSprite.draw(renderingContext, foregroundPosition, 500);
 
 
 }

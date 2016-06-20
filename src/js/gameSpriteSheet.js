@@ -20,9 +20,9 @@ Sprite.prototype.draw = function (renderingContext, x, y) {
 
 function initSprites(img) {
     dragonSprite = [
-        new Sprite(img, 225, 374, 67, 36),
-        new Sprite(img, 295, 374, 67, 36),
-        new Sprite(img, 364, 354, 65, 51)
+        new Sprite(img, 225, 443.5, 69, 37.5),
+        new Sprite(img, 297, 443.5, 64, 31.5),
+        new Sprite(img, 366, 424.5, 63, 50.5)
     ];
 
     dragonRiderSprite = [
@@ -43,7 +43,7 @@ function initSprites(img) {
         new Sprite(img, 104, 287, 96.5, 49.5)
     ];
 
-    backgroundSprite = new Sprite(img, 0, 0, 600, 400);
-    foregroundSprite = new Sprite(img, 0, 250, 600, 150);
+    backgroundSprite = new Sprite(img, 0, 0, 799, 400);
+    foregroundSprite = new Sprite(img, 0, 288, 799, 41.5);
     backgroundSprite.color = "#8BE4FD"
 }
