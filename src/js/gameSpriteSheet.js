@@ -19,31 +19,30 @@ Sprite.prototype.draw = function (renderingContext, x, y) {
 };
 
 function initSprites(img) {
-    dragonSprite = [
+    blackDragonSprite = [
         new Sprite(img, 225, 443.5, 69, 37.5),
         new Sprite(img, 297, 443.5, 64, 31.5),
         new Sprite(img, 366, 424.5, 63, 50.5)
     ];
 
-    dragonRiderSprite = [
+    greenDragonSprite = [
         new Sprite(img, 225, 374, 67, 36),
         new Sprite(img, 295, 374, 67, 36),
         new Sprite(img, 364, 354, 65, 51),
         new Sprite(img, 364, 354, 65, 51)
     ];
 
-    birdSprite = [
+    blueDragonSprite = [
         new Sprite(img, 225, 374, 67, 36),
         new Sprite(img, 295, 374, 67, 36),
         new Sprite(img, 364, 354, 65, 51),
         new Sprite(img, 364, 354, 65, 51)
     ];
 
-    playButtonSprite = [
-        new Sprite(img, 104, 287, 96.5, 49.5)
-    ];
-
-    backgroundSprite = new Sprite(img, 0, 0, 799, 400);
-    foregroundSprite = new Sprite(img, 0, 288, 799, 41.5);
+    playButtonSprite = new Sprite(img, 103, 357, 95, 49.5);
+    bottomCrystalSprite = new Sprite(img, 3, 357.5, 48, 103);
+    topCrystalSprite = new Sprite(img, 0, 466.5, 46, 108.5);
+    backgroundSprite = new Sprite(img, 0, 0, 797.5, 400);
+    foregroundSprite = new Sprite(img, 0, 286.5, 714.5, 42.5);
     backgroundSprite.color = "#8BE4FD"
 }

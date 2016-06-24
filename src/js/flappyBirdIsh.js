@@ -19,8 +19,6 @@ var states = {
 };
 
 
-
-
 function windowSetup() {
     //Retrieve the width and height of the window
     width = window.innerWidth;
@@ -28,7 +26,7 @@ function windowSetup() {
 
     //Set the width and height if we are on a display with a width > 500px (eg. a desktop or tablet environment).
     var inputEvent = "touchStart";
-    if(width >= 500){
+    if (width >= 500) {
         width = 600;
         height = 570;
         inputEvent = "mousedown";
@@ -41,6 +39,7 @@ function canvasSetup() {
 
     canvas = document.createElement("canvas");
     canvas.style.border = "10px solid black";
+    canvas.style.margin = "0 auto";
     canvas.width = width;
     canvas.height = height;
     renderingContext = canvas.getContext("2d");
@@ -50,21 +49,21 @@ function loadGraphics() {
     //initiate graphics and an ok button
 
     var img = new Image();
-    img.src="img/newGameSprite.png";  //sprite image
+    img.src = "img/perfectGameSprite.png";  //sprite image
     img.onload = function () {
         initSprites(this);
         renderingContext.fillStyle = backgroundSprite.color;
         //renderingContext.fillRect(0, 0, width, height);
         //backgroundSprite.draw(renderingContext, 0, 0);
 
-        //dragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
+       // blackDragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
 
         gameLoop();
     };
 }
 
 function Dragon() {
-    this.x = 280;
+    this.x = 295;
     this.y = 245;
 
     this.frame = 0;
@@ -82,19 +81,19 @@ function Dragon() {
     };
 
     this.update = function () {
-      var n = currentState === states.Splash ? 10 : 5;
+        var n = currentState === states.Splash ? 10 : 5;
         this.frame += frames % n === 0 ? 1 : 0;
         this.frame %= this.animation.length;
 
         if (currentState === states.Splash) {
             //this.updateIdleDragon();
-        }   else {
+        } else {
             this.updatePlayingDragon();
         }
     };
 
     this.updateIdleDragon = function () {
-        this.y = height = 280 + 5 * Math.cos(frames / 10);
+        this.y = height = 180 + 5 * Math.cos(frames / 10);
         this.rotation = 0;
     };
 
@@ -135,7 +134,17 @@ function Dragon() {
         renderingContext.rotate(this.rotation);
 
         var n = this.animation[this.frame];
-        dragonSprite[n].draw(renderingContext, -dragonSprite[n].width / 2, -dragonSprite[n].height / 2);
+        var playerSpriteChoice = document.getElementById('playerChoice').value;
+        blackDragonSprite[n].draw(renderingContext, -blackDragonSprite[n].width / 2, -blackDragonSprite[n].height / 2);
+            if (playerSpriteChoice === 'Green Dragon') {
+                greenDragonSprite[n].draw(renderingContext, -greenDragonSprite[n].width / 2, -greenDragonSprite[n].height / 2);
+            }
+            else if (playerSpriteChoice === "Black Dragon") {
+                blackDragonSprite[n].draw(renderingContext, -blackDragonSprite[n].width / 2, -blackDragonSprite[n].height / 2);
+            }
+            else if (playerSpriteChoice === "Blue Dragon") {
+                blueDragonSprite[n].draw(renderingContext, -blueDragonSprite[n].width / 2, -blueDragonSprite[n].height / 2);
+            }
 
         renderingContext.restore();
     };
@@ -143,6 +152,93 @@ function Dragon() {
 }
 
 
+function crystalCollection() {
+    this._crystals = [];
+
+    /**
+     * Empty crystal array
+     */
+    this.reset = function () {
+        this._crystals = [];
+    };
+
+    /**
+     * Creates and adds a new Crystal to the game.
+     */
+    this.add = function () {
+        this._crystals.push(new Crystal()); // Create and push crystal to array
+    };
+
+    /**
+     * Update the position of existing crystal and add new crystal when necessary.
+     */
+    this.update = function () {
+        if (frames % 100 === 0) { // Add a new crystal to the game every 100 frames.
+            this.add();
+        }
+
+        for (var i = 0, len = this._crystals.length; i < len; i++) { // Iterate through the array of crystals and update each.
+            var crystal = this._crystals[i]; // The current crystal.
+
+            if (i === 0) { // If this is the leftmost crystal, it is the only crystal that the dragon can collide with . . .
+                crystal.detectCollision(); // . . . so, determine if the dragon has collided with this leftmost crystal.
+            }
+
+            crystal.x -= 2; // Each frame, move each crystal two pixels to the left. Higher/lower values change the movement speed.
+            if (crystal.x < -crystal.width) { // If the crystal has moved off screen . . .
+                this._crystals.splice(0, 1); // . . . remove it.
+                i--;
+                len--;
+            }
+        }
+    };
+
+    /**
+     * Draw all corals to canvas context.
+     */
+    this.draw = function () {
+        for (var i = 0, len = this._crystals.length; i < len; i++) {
+            var crystal = this._crystals[i];
+            crystal.draw();
+        }
+    };
+}
+
+
+function Crystal() {
+    this.x = 500;
+    this.y = height - (bottomCrystalSprite.height + foregroundSprite.height + 120 + 200 * Math.random());
+    this.width = bottomCrystalSprite.width;
+    this.height = bottomCrystalSprite.height;
+
+    /**
+     * Determines if the dragon has collided with the Crystal.
+     * Calculates x/y difference and use normal vector length calculation to determine
+     */
+    this.detectCollision = function () {
+        // intersection
+        var cx = Math.min(Math.max(dragon.x, this.x), this.x + this.width);
+        var cy1 = Math.min(Math.max(dragon.y, this.y), this.y + this.height);
+        var cy2 = Math.min(Math.max(dragon.y, this.y + this.height + 110), this.y + 2 * this.height + 80);
+        // Closest difference
+        var dx = dragon.x - cx;
+        var dy1 = dragon.y - cy1;
+        var dy2 = dragon.y - cy2;
+        // Vector length
+        var d1 = dx * dx + dy1 * dy1;
+        var d2 = dx * dx + dy2 * dy2;
+        var r = dragon.radius * dragon.radius;
+        // Determine intersection
+        if (r > d1 || r > d2) {
+            currentState = states.Score;
+        }
+    };
+
+    this.draw = function () {
+        bottomCrystalSprite.draw(renderingContext, this.x, this.y);
+        topCrystalSprite.draw(renderingContext, this.x, this.y + 110 + this.height);
+    }
+}
 
 
 function gameLoop() {
@@ -152,15 +248,17 @@ function gameLoop() {
 }
 
 function update() {
-    frames ++;
+    frames++;
 
-    if(currentState !== states.Score) {
-        foregroundPosition = (foregroundPosition - 2) % 999; // Moves left 2 pixels each frame. Wrap every 999px.
-        backgroundPosition = (backgroundPosition - .5) % 999;
+    if (currentState !== states.Score) {
+
+        foregroundPosition = (foregroundPosition - 3) % 1419; // Moves left 2 pixels each frame. Wrap every 999px.
+        backgroundPosition = (backgroundPosition - .5) % 1595;
+
     }
-    /*if (currentState === states.Game) {
+    if (currentState === states.Game) {
         crystals.update();
-    }*/
+    }
 
     dragon.update();
 }
@@ -169,17 +267,19 @@ function render() {
     renderingContext.fillRect(0, 0, width, height);
 
     backgroundSprite.draw(renderingContext, backgroundPosition, 0);
+    backgroundSprite.draw(renderingContext, backgroundPosition + backgroundSprite.width, 0);
 
-    //crystals.draw(renderingContext);
+    crystals.draw(renderingContext);
+
+    foregroundSprite.draw(renderingContext, foregroundPosition, 498);
+    foregroundSprite.draw(renderingContext, foregroundPosition + (foregroundSprite.width - 10), 498);
+
     dragon.draw(renderingContext);
 
-    /*if (currentState === states.Score) {
-        playButtonSprite.draw(renderingContext, 250, 250);
-    } */
 
-    //draw foreground sprites
-    //foregroundSprite.draw(renderingContext, foregroundPosition, height - foregroundSprite.height);
-    foregroundSprite.draw(renderingContext, foregroundPosition, 500);
+    if (currentState === states.Splash) {
+        playButtonSprite.draw(renderingContext, 195, 350);
+    }
 
 
 }
@@ -206,14 +306,14 @@ function onpress(evt) {
             }
 
             // Check if within the okButton
-            if (okButton.x < mouseX && mouseX < okButton.x + okButton.width &&
-                okButton.y < mouseY && mouseY < okButton.y + okButton.height
-            ) {
-                //console.log('click');
-                corals.reset();
-                currentState = states.Splash;
-                score = 0;
-            }
+            /*if (okButton.x < mouseX && mouseX < okButton.x + okButton.width &&
+             okButton.y < mouseY && mouseY < okButton.y + okButton.height
+             ) {
+             //console.log('click');
+             crystals.reset();
+             currentState = states.Splash;
+             score = 0;
+             }*/
             break;
     }
 }
@@ -229,7 +329,7 @@ function main() {
 
     dragon = new Dragon();
 
-    //crystals = new crystals();
+    crystals = new crystalCollection();
 
     loadGraphics();
 }
