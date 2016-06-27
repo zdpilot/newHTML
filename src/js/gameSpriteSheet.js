@@ -40,8 +40,8 @@ function initSprites(img) {
     ];
 
     playButtonSprite = new Sprite(img, 103, 357, 95, 49.5);
-    bottomCrystalSprite = new Sprite(img, 3, 357.5, 48, 103);
-    topCrystalSprite = new Sprite(img, 0, 466.5, 46, 108.5);
+    bottomCrystalSprite = new Sprite(img, 561.5, 357.5, 32.5, 188.5);
+    topCrystalSprite = new Sprite(img, 606, 357.5, 32.5, 188.5);
     backgroundSprite = new Sprite(img, 0, 0, 797.5, 400);
     foregroundSprite = new Sprite(img, 0, 286.5, 714.5, 42.5);
     backgroundSprite.color = "#8BE4FD"

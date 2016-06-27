@@ -102,9 +102,16 @@ function Dragon() {
         this.velocity += this.gravity;
         this.y += this.velocity;
 
+        if (currentState === states.Game) {
+            for(i = 295; i >= 175; i--)
+            this.x = i;
+        }
+
         // Change to the score state when fish touches the ground
         if (this.y >= 450) {
             this.y = 450;
+
+
 
             if (currentState === states.Game) {
                 currentState = states.Score;
@@ -194,7 +201,7 @@ function crystalCollection() {
     };
 
     /**
-     * Draw all corals to canvas context.
+     * Draw all crystals to canvas context.
      */
     this.draw = function () {
         for (var i = 0, len = this._crystals.length; i < len; i++) {
@@ -206,7 +213,7 @@ function crystalCollection() {
 
 
 function Crystal() {
-    this.x = 500;
+    this.x = 600;
     this.y = height - (bottomCrystalSprite.height + foregroundSprite.height + 120 + 200 * Math.random());
     this.width = bottomCrystalSprite.width;
     this.height = bottomCrystalSprite.height;
@@ -274,10 +281,15 @@ function render() {
     foregroundSprite.draw(renderingContext, foregroundPosition, 498);
     foregroundSprite.draw(renderingContext, foregroundPosition + (foregroundSprite.width - 10), 498);
 
+
     dragon.draw(renderingContext);
 
 
     if (currentState === states.Splash) {
+        playButtonSprite.draw(renderingContext, 195, 350);
+    }
+
+    if (currentState === states.Score) {
         playButtonSprite.draw(renderingContext, 195, 350);
     }
 
@@ -306,17 +318,31 @@ function onpress(evt) {
             }
 
             // Check if within the okButton
-            /*if (okButton.x < mouseX && mouseX < okButton.x + okButton.width &&
+            if (okButton.x < mouseX && mouseX < okButton.x + okButton.width &&
              okButton.y < mouseY && mouseY < okButton.y + okButton.height
              ) {
              //console.log('click');
              crystals.reset();
              currentState = states.Splash;
              score = 0;
-             }*/
+             }
             break;
     }
 }
+
+/*function score () {
+
+    var i = 0;
+
+    if(currentState == states.Game) {
+        do {
+            i++;
+        } while (
+
+            );
+    }
+}*/
+
 
 
 function main() {
