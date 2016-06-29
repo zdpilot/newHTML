@@ -11,6 +11,9 @@ var playButton = 0;
 
 var foregroundPosition = 0;
 var backgroundPosition = 0;
+var currentScore = 0;
+var myscore = 0;
+var highscore = localStorage.getItem("highscore");
 
 var states = {
     Splash: 0,
@@ -58,6 +61,13 @@ function loadGraphics() {
 
        // blackDragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
 
+        playButton = {
+            x: (width = playButtonSprite.width) / 2,
+            y: height - 200,
+            width: playButtonSprite.width,
+            height: playButtonSprite.height
+        };
+
         gameLoop();
     };
 }
@@ -102,8 +112,9 @@ function Dragon() {
         this.velocity += this.gravity;
         this.y += this.velocity;
 
+        // Changes the position of the dragon between the states.
         if (currentState === states.Game) {
-            for(i = 295; i >= 175; i--)
+            for(i = 295; i >= 165; i--)
             this.x = i;
         }
 
@@ -125,7 +136,7 @@ function Dragon() {
             currentState = states.Score;
         }
 
-        // When fish lacks upward momentum increment the rotation angle
+        // When dragon lacks upward momentum increment the rotation angle
         if (this.velocity >= this._jump) {
             this.frame = 1;
             this.rotation = Math.min(Math.PI / 2, this.rotation + 0.3);
@@ -189,6 +200,7 @@ function crystalCollection() {
 
             if (i === 0) { // If this is the leftmost crystal, it is the only crystal that the dragon can collide with . . .
                 crystal.detectCollision(); // . . . so, determine if the dragon has collided with this leftmost crystal.
+                crystal.score();
             }
 
             crystal.x -= 2; // Each frame, move each crystal two pixels to the left. Higher/lower values change the movement speed.
@@ -200,6 +212,9 @@ function crystalCollection() {
         }
     };
 
+    this.numberOfCrystals = function () {
+        return this._crystals.length
+    };
     /**
      * Draw all crystals to canvas context.
      */
@@ -217,6 +232,7 @@ function Crystal() {
     this.y = height - (bottomCrystalSprite.height + foregroundSprite.height + 120 + 200 * Math.random());
     this.width = bottomCrystalSprite.width;
     this.height = bottomCrystalSprite.height;
+    this.scored = false;
 
     /**
      * Determines if the dragon has collided with the Crystal.
@@ -239,11 +255,19 @@ function Crystal() {
         if (r > d1 || r > d2) {
             currentState = states.Score;
         }
+
     };
 
     this.draw = function () {
         bottomCrystalSprite.draw(renderingContext, this.x, this.y);
         topCrystalSprite.draw(renderingContext, this.x, this.y + 110 + this.height);
+    };
+    this.score = function () {
+        if(this.x + this.width < dragon.x && !this.scored) {
+            updateScore();
+            this.scored = true;
+        }
+
     }
 }
 
@@ -251,6 +275,9 @@ function Crystal() {
 function gameLoop() {
     update();
     render();
+    /*if (frames % 50 == 0 && currentState === states.Game) {
+        score();
+    }*/
     window.requestAnimationFrame(gameLoop);
 }
 
@@ -294,6 +321,8 @@ function render() {
     }
 
 
+
+
 }
 
 function onpress(evt) {
@@ -318,30 +347,27 @@ function onpress(evt) {
             }
 
             // Check if within the okButton
-            if (okButton.x < mouseX && mouseX < okButton.x + okButton.width &&
-             okButton.y < mouseY && mouseY < okButton.y + okButton.height
-             ) {
-             //console.log('click');
+            if (playButton.x < mouseX && mouseX < playButton.x + playButton.width &&
+             playButton.y < mouseY && mouseY < playButton.y + playButton.height) {
              crystals.reset();
              currentState = states.Splash;
-             score = 0;
+             myscore = 0;
              }
+
+
             break;
     }
 }
 
-/*function score () {
+function updateScore() {
+    myscore++;
 
-    var i = 0;
+    $("#currentScoreText").html("Current Score: " + myscore);
+}
 
-    if(currentState == states.Game) {
-        do {
-            i++;
-        } while (
+function reset() {
 
-            );
-    }
-}*/
+}
 
 
 
@@ -358,4 +384,5 @@ function main() {
     crystals = new crystalCollection();
 
     loadGraphics();
+
 }
