@@ -13,12 +13,13 @@ var foregroundPosition = 0;
 var backgroundPosition = 0;
 var currentScore = 0;
 var myscore = 0;
-var highscore = localStorage.getItem("highscore");
+var HighScore = 0;
 
 var states = {
     Splash: 0,
     Game: 1,
-    Score: 2
+    Score: 2,
+    ChooseDragon: 3
 };
 
 
@@ -62,7 +63,7 @@ function loadGraphics() {
        // blackDragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
 
         playButton = {
-            x: (width = playButtonSprite.width) / 2,
+            x: (width = playButtonSprite.width),
             y: height - 200,
             width: playButtonSprite.width,
             height: playButtonSprite.height
@@ -96,14 +97,14 @@ function Dragon() {
         this.frame %= this.animation.length;
 
         if (currentState === states.Splash) {
-            //this.updateIdleDragon();
+            this.updateIdleDragon();
         } else {
             this.updatePlayingDragon();
         }
     };
 
     this.updateIdleDragon = function () {
-        this.y = height = 180 + 5 * Math.cos(frames / 10);
+        this.y = height = 245 + 5 * Math.cos(frames / 10);
         this.rotation = 0;
     };
 
@@ -118,9 +119,9 @@ function Dragon() {
             this.x = i;
         }
 
-        // Change to the score state when fish touches the ground
-        if (this.y >= 450) {
-            this.y = 450;
+        // Change to the score state when dragon touches the ground
+        if (this.y >= 650) {
+            this.y = 650;
 
 
 
@@ -169,7 +170,6 @@ function Dragon() {
 
 }
 
-
 function crystalCollection() {
     this._crystals = [];
 
@@ -204,6 +204,19 @@ function crystalCollection() {
             }
 
             crystal.x -= 2; // Each frame, move each crystal two pixels to the left. Higher/lower values change the movement speed.
+
+            var crystalUpDown = 0;
+            if(crystalUpDown == 75){
+                crystal.y -= 2;
+                crystalUpDown--;
+                if(crystalUpDown == 0){
+                    crystal.y += 2;
+                    crystalUpDown++;
+                }
+            }
+           // crystal.y -= 2;
+
+
             if (crystal.x < -crystal.width) { // If the crystal has moved off screen . . .
                 this._crystals.splice(0, 1); // . . . remove it.
                 i--;
@@ -226,10 +239,9 @@ function crystalCollection() {
     };
 }
 
-
 function Crystal() {
     this.x = 600;
-    this.y = height - (bottomCrystalSprite.height + foregroundSprite.height + 120 + 200 * Math.random());
+    this.y = height - (bottomCrystalSprite.height + foregroundSprite.height - 120 + 200 * Math.random());
     this.width = bottomCrystalSprite.width;
     this.height = bottomCrystalSprite.height;
     this.scored = false;
@@ -271,7 +283,6 @@ function Crystal() {
     }
 }
 
-
 function gameLoop() {
     update();
     render();
@@ -305,11 +316,10 @@ function render() {
 
     crystals.draw(renderingContext);
 
+    dragon.draw(renderingContext);
+
     foregroundSprite.draw(renderingContext, foregroundPosition, 498);
     foregroundSprite.draw(renderingContext, foregroundPosition + (foregroundSprite.width - 10), 498);
-
-
-    dragon.draw(renderingContext);
 
 
     if (currentState === states.Splash) {
@@ -318,10 +328,8 @@ function render() {
 
     if (currentState === states.Score) {
         playButtonSprite.draw(renderingContext, 195, 350);
+        checkCookie();
     }
-
-
-
 
 }
 
@@ -365,12 +373,6 @@ function updateScore() {
     $("#currentScoreText").html("Current Score: " + myscore);
 }
 
-function reset() {
-
-}
-
-
-
 function main() {
     windowSetup();
     canvasSetup();
@@ -385,4 +387,45 @@ function main() {
 
     loadGraphics();
 
+    checkCookie();
+
+}
+
+function setCookie(cvalue) {
+    var d = new Date();
+    d.setTime(d.getTime() + (7*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = "HighScore" + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length,c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var HighScore=getCookie("HighScore");
+
+    if (HighScore!="") {
+        if(myscore > HighScore) {
+            HighScore = myscore;
+        }
+        setCookie(HighScore);
+        document.getElementById("highScoreText").innerHTML = "High Score: " + HighScore;
+    } else {
+         {
+            setCookie(0);
+             document.getElementById("highScoreText").innerHTML = "High Score: " + HighScore;
+        }
+    }
 }

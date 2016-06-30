@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c553194e-63ab-460d-a3ac-6a4f2d8e65cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/stone-rock-mountain-dragon.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/flappyBirdIsh.css" afterPath="$PROJECT_DIR$/src/css/flappyBirdIsh.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/flappyBirdIsh.html" afterPath="$PROJECT_DIR$/src/flappyBirdIsh.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/flappyBirdIsh.js" afterPath="$PROJECT_DIR$/src/js/flappyBirdIsh.js" />
     </list>
     <ignored path="newHTML.iws" />
@@ -73,7 +69,7 @@
       <file leaf-file-name="flappyBirdIsh.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/flappyBirdIsh.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
+            <state relative-caret-position="915">
               <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding />
             </state>
@@ -83,9 +79,15 @@
       <file leaf-file-name="flappyBirdIsh.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/flappyBirdIsh.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="350" column="79" selection-start-line="350" selection-start-column="79" selection-end-line="350" selection-end-column="79" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="379" column="32" selection-start-line="379" selection-start-column="32" selection-end-line="379" selection-end-column="32" />
+              <folding>
+                <element signature="n#!!block;n#canvasSetup#0" expanded="false" />
+                <element signature="n#!!block;n#loadGraphics#0" expanded="false" />
+                <element signature="n#!!block;n#gameLoop#0" expanded="false" />
+                <element signature="n#!!block;n#onpress#0" expanded="false" />
+                <element signature="n#!!block;n#updateScore#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -476,14 +478,8 @@
       <workItem from="1467033587601" duration="11238000" />
       <workItem from="1467081334489" duration="118000" />
       <workItem from="1467120491519" duration="7136000" />
-      <workItem from="1467206905519" duration="5942000" />
-    </task>
-    <task id="LOCAL-00005" summary="Edited Bio area and began the projects area 3/30/16">
-      <created>1459367951891</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1459367951891</updated>
+      <workItem from="1467206905519" duration="6094000" />
+      <workItem from="1467294052135" duration="9196000" />
     </task>
     <task id="LOCAL-00006" summary="Finished projects area and Contact Me content 3/31/16">
       <created>1459449619340</created>
@@ -821,11 +817,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467051076161</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="made the current score work 6/29/16">
+      <created>1467222108443</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1467222108468</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435475000" />
+    <option name="totallyTimeSpent" value="444823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -843,7 +846,7 @@
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18601583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906976" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.027946537" sideWeight="0.50527704" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.027878787" sideWeight="0.50527704" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -873,7 +876,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added in &quot;hidden&quot; div 5/4/16" />
     <MESSAGE value="worked on jquery for hidden div 5/5/16" />
     <MESSAGE value="fixed hiddendiv, added hidden dark background  5/5/16" />
     <MESSAGE value="messed around with titles 5/9/16" />
@@ -898,7 +900,8 @@
     <MESSAGE value="both foreground and background move 6/20/16" />
     <MESSAGE value="both foreground and background move properely 6/24/16" />
     <MESSAGE value="proper positioning, character moved back during Game mode, play button added to Score mode, revised crystals 6/24/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="proper positioning, character moved back during Game mode, play button added to Score mode, revised crystals 6/24/16" />
+    <MESSAGE value="made the current score work 6/29/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the current score work 6/29/16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1186,6 +1189,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/flappyBirdIsh.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/gameSpriteSheet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -1196,11 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/perfectGameSprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/flappyBirdIsh.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1209,19 +1215,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/flappyBirdIsh.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/img/perfectGameSprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/flappyBirdIsh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="350" column="79" selection-start-line="350" selection-start-column="79" selection-end-line="350" selection-end-column="79" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="379" column="32" selection-start-line="379" selection-start-column="32" selection-end-line="379" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!block;n#canvasSetup#0" expanded="false" />
+            <element signature="n#!!block;n#loadGraphics#0" expanded="false" />
+            <element signature="n#!!block;n#gameLoop#0" expanded="false" />
+            <element signature="n#!!block;n#onpress#0" expanded="false" />
+            <element signature="n#!!block;n#updateScore#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
