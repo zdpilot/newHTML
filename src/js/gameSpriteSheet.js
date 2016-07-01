@@ -46,3 +46,5 @@ function initSprites(img) {
     foregroundSprite = new Sprite(img, 0, 286.5, 714.5, 42.5);
     backgroundSprite.color = "#8BE4FD"
 }
+
+

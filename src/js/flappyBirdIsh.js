@@ -1,3 +1,4 @@
+
 /**
  * Created by patrickkesler on 6/13/16.
  */
@@ -14,6 +15,7 @@ var backgroundPosition = 0;
 var currentScore = 0;
 var myscore = 0;
 var HighScore = 0;
+var crystalUpDown = 0;
 
 var states = {
     Splash: 0,
@@ -60,7 +62,7 @@ function loadGraphics() {
         //renderingContext.fillRect(0, 0, width, height);
         //backgroundSprite.draw(renderingContext, 0, 0);
 
-       // blackDragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
+        // blackDragonSprite[0].draw(renderingContext, 225, 250, 142, 50);
 
         playButton = {
             x: (width = playButtonSprite.width),
@@ -104,7 +106,7 @@ function Dragon() {
     };
 
     this.updateIdleDragon = function () {
-        this.y = height = 245 + 5 * Math.cos(frames / 10);
+        this.y = height - 295;
         this.rotation = 0;
     };
 
@@ -116,7 +118,7 @@ function Dragon() {
         // Changes the position of the dragon between the states.
         if (currentState === states.Game) {
             for(i = 295; i >= 165; i--)
-            this.x = i;
+                this.x = i;
         }
 
         // Change to the score state when dragon touches the ground
@@ -155,15 +157,15 @@ function Dragon() {
         var n = this.animation[this.frame];
         var playerSpriteChoice = document.getElementById('playerChoice').value;
         blackDragonSprite[n].draw(renderingContext, -blackDragonSprite[n].width / 2, -blackDragonSprite[n].height / 2);
-            if (playerSpriteChoice === 'Green Dragon') {
-                greenDragonSprite[n].draw(renderingContext, -greenDragonSprite[n].width / 2, -greenDragonSprite[n].height / 2);
-            }
-            else if (playerSpriteChoice === "Black Dragon") {
-                blackDragonSprite[n].draw(renderingContext, -blackDragonSprite[n].width / 2, -blackDragonSprite[n].height / 2);
-            }
-            else if (playerSpriteChoice === "Blue Dragon") {
-                blueDragonSprite[n].draw(renderingContext, -blueDragonSprite[n].width / 2, -blueDragonSprite[n].height / 2);
-            }
+        if (playerSpriteChoice === 'Green Dragon') {
+            greenDragonSprite[n].draw(renderingContext, -greenDragonSprite[n].width / 2, -greenDragonSprite[n].height / 2);
+        }
+        else if (playerSpriteChoice === "Black Dragon") {
+            blackDragonSprite[n].draw(renderingContext, -blackDragonSprite[n].width / 2, -blackDragonSprite[n].height / 2);
+        }
+        else if (playerSpriteChoice === "Blue Dragon") {
+            blueDragonSprite[n].draw(renderingContext, -blueDragonSprite[n].width / 2, -blueDragonSprite[n].height / 2);
+        }
 
         renderingContext.restore();
     };
@@ -205,16 +207,28 @@ function crystalCollection() {
 
             crystal.x -= 2; // Each frame, move each crystal two pixels to the left. Higher/lower values change the movement speed.
 
-            var crystalUpDown = 0;
-            if(crystalUpDown == 75){
-                crystal.y -= 2;
-                crystalUpDown--;
-                if(crystalUpDown == 0){
-                    crystal.y += 2;
-                    crystalUpDown++;
-                }
+            /*if (crystalUpDown == 0) {
+                crystalUpDown++;
+                crystal.y -= .5;
+                console.log("Crystal Up Down" + crystalUpDown);
             }
-           // crystal.y -= 2;
+            else if(crystalUpDown == 25){
+                crystal.y += .5;
+                crystalUpDown--;
+
+            }*/
+            // crystal.y -= 2;
+           if(crystalUpDown <= 150 ){
+               crystal.y -= .5;
+               crystalUpDown++;
+           }
+            if(crystalUpDown > 150 && crystalUpDown <= 300){
+                crystal.y += .5;
+                crystalUpDown++;
+            }
+            if(crystalUpDown > 300){
+                crystalUpDown = 0;
+            }
 
 
             if (crystal.x < -crystal.width) { // If the crystal has moved off screen . . .
@@ -241,7 +255,7 @@ function crystalCollection() {
 
 function Crystal() {
     this.x = 600;
-    this.y = height - (bottomCrystalSprite.height + foregroundSprite.height - 120 + 200 * Math.random());
+    this.y = height - (bottomCrystalSprite.height + foregroundSprite.height + 250 - 120 + 200 * Math.random());
     this.width = bottomCrystalSprite.width;
     this.height = bottomCrystalSprite.height;
     this.scored = false;
@@ -287,8 +301,8 @@ function gameLoop() {
     update();
     render();
     /*if (frames % 50 == 0 && currentState === states.Game) {
-        score();
-    }*/
+     score();
+     }*/
     window.requestAnimationFrame(gameLoop);
 }
 
@@ -356,11 +370,11 @@ function onpress(evt) {
 
             // Check if within the okButton
             if (playButton.x < mouseX && mouseX < playButton.x + playButton.width &&
-             playButton.y < mouseY && mouseY < playButton.y + playButton.height) {
-             crystals.reset();
-             currentState = states.Splash;
-             myscore = 0;
-             }
+                playButton.y < mouseY && mouseY < playButton.y + playButton.height) {
+                crystals.reset();
+                currentState = states.Splash;
+                myscore = 0;
+            }
 
 
             break;
@@ -423,9 +437,9 @@ function checkCookie() {
         setCookie(HighScore);
         document.getElementById("highScoreText").innerHTML = "High Score: " + HighScore;
     } else {
-         {
+        {
             setCookie(0);
-             document.getElementById("highScoreText").innerHTML = "High Score: " + HighScore;
+            document.getElementById("highScoreText").innerHTML = "High Score: " + HighScore;
         }
     }
 }
